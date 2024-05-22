@@ -23,7 +23,7 @@ type Variant = {
 
 const variants: { [key in VariantTypes]: Variant } = {
   purple: {
-    color: "#7645D9",
+    color: "#DA251D",
     strokeColor: "#ffffff",
     strokeSize: 2,
     fontSize: 28,
@@ -40,7 +40,7 @@ const variants: { [key in VariantTypes]: Variant } = {
   },
   yellow: {
     color: "#FFB237",
-    strokeColor: "#7645D9",
+    strokeColor: "#DA251D",
     strokeSize: 2,
     fontSize: 28,
     lineHeight: 30,

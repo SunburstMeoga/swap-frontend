@@ -1,20 +1,20 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  AutoColumn,
-  Box,
-  Breadcrumbs,
-  Button,
-  Card,
-  CopyButton,
-  Flex,
-  Heading,
-  Image,
-  Message,
-  MessageText,
-  ScanLink,
-  Spinner,
-  Text,
-  useMatchBreakpoints,
+    AutoColumn,
+    Box,
+    Breadcrumbs,
+    Button,
+    Card,
+    CopyButton,
+    Flex,
+    Heading,
+    Image,
+    Message,
+    MessageText,
+    ScanLink,
+    Spinner,
+    Text,
+    useMatchBreakpoints,
 } from '@pancakeswap/uikit'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 
@@ -45,12 +45,12 @@ import TransactionTable from '../components/TransactionsTable'
 import { MonoSpace, StyledCMCLink } from '../components/shared'
 import { ONE_HOUR_SECONDS, TimeWindow, v3InfoPath } from '../constants'
 import {
-  usePoolsData,
-  usePoolsForToken,
-  useTokenChartData,
-  useTokenData,
-  useTokenPriceData,
-  useTokenTransactions,
+    usePoolsData,
+    usePoolsForToken,
+    useTokenChartData,
+    useTokenData,
+    useTokenPriceData,
+    useTokenTransactions,
 } from '../hooks'
 import { currentTimestamp } from '../utils'
 import { unixToDate } from '../utils/date'
@@ -323,7 +323,7 @@ const TokenPage: React.FC<{ address: string }> = ({ address }) => {
                   {view === ChartView.TVL ? (
                     <LineChart
                       data={formattedTvlData}
-                      color={isDark ? '#9A6AFF' : '#7A6EAA'}
+                      color={isDark ? '#9A6AFF' : '#AA464B'}
                       minHeight={340}
                       value={latestValue}
                       label={valueLabel}

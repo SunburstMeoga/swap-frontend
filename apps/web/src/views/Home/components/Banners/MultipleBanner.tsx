@@ -28,7 +28,7 @@ const BannerPlaceHolder = styled.div`
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background: -webkit-linear-gradient(#7645d9 0%, #452a7a 100%);
+    background: -webkit-linear-gradient(#DA251D 0%, #452a7a 100%);
     ${({ theme }) => theme.mediaQueries.sm} {
       top: 20px;
       left: 20px;

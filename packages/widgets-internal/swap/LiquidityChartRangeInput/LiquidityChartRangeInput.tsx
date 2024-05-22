@@ -66,8 +66,8 @@ export function LiquidityChartRangeInput({
   const theme = useTheme();
 
   // Get token color
-  const tokenAColor = "#7645D9";
-  const tokenBColor = "#7645D9";
+  const tokenAColor = "#DA251D";
+  const tokenBColor = "#DA251D";
 
   const isSorted = useMemo(
     () => currencyA && currencyB && currencyA?.wrapped.sortsBefore(currencyB?.wrapped),

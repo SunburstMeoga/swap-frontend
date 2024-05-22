@@ -19,7 +19,7 @@ const Container = styled(Flex)`
 
   ${({ theme }) => theme.mediaQueries.md} {
     padding: 0px;
-    background: #7a6eaa;
+    background: #AA464B;
   }
 `
 

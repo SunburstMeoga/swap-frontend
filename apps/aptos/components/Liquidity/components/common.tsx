@@ -1,26 +1,26 @@
-import React from 'react'
-import { Percent, CurrencyAmount, Price } from '@pancakeswap/aptos-swap-sdk'
+import { CurrencyAmount, Percent, Price } from '@pancakeswap/aptos-swap-sdk'
 import { Currency } from '@pancakeswap/swap-sdk-core'
+import React from 'react'
 
+import { useTranslation } from '@pancakeswap/localization'
 import {
-  Text,
-  useTooltip,
-  TooltipText,
+  AutoColumn,
+  AutoRow,
   Box,
   Flex,
+  RowBetween,
   Svg,
   SvgProps,
-  AutoColumn,
-  RowBetween,
-  AutoRow,
+  Text,
+  TooltipText,
+  useTooltip,
 } from '@pancakeswap/uikit'
-import { useTranslation } from '@pancakeswap/localization'
-import { getLPSymbol } from 'utils/getLpSymbol'
-import { styled } from 'styled-components'
+import { useUserSlippage } from '@pancakeswap/utils/user'
 import { GreyCard } from 'components/Card'
 import { CurrencyLogo, DoubleCurrencyLogo } from 'components/Logo'
-import { useUserSlippage } from '@pancakeswap/utils/user'
+import { styled } from 'styled-components'
 import formatAmountDisplay from 'utils/formatAmountDisplay'
+import { getLPSymbol } from 'utils/getLpSymbol'
 
 import { CurrencySelectorValue } from '../hooks/useCurrencySelectRoute'
 
@@ -33,7 +33,7 @@ const Dot = styled(Box)<{ scale?: 'sm' | 'md' }>`
 const CircleSvg = ({ percent = 1, ...props }: SvgProps & { percent?: number }) => (
   <Svg width="60px" height="60px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
     <g filter="url(#filter0_i_1147_113741)">
-      <circle r="10" cx="10" cy="10" fill="#7645D9" />
+      <circle r="10" cx="10" cy="10" fill="#DA251D" />
       <circle
         r="5"
         cx="10"

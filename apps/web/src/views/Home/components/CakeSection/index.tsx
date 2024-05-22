@@ -2,24 +2,24 @@ import { useTranslation } from '@pancakeswap/localization'
 import { Button, Flex, Link, OpenNewIcon, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import useTheme from 'hooks/useTheme'
+import NextLink from 'next/link'
 import React, { memo, useCallback, useLayoutEffect, useRef } from 'react'
 import { css, keyframes, styled } from 'styled-components'
 import { useFourYearTotalVeCakeApr } from 'views/CakeStaking/hooks/useAPR'
-import NextLink from 'next/link'
 import { useDrawCanvas } from '../../hooks/useDrawCanvas'
 import { useDrawSequenceImages } from '../../hooks/useDrawSequence'
 import { checkIsIOS } from '../../hooks/useIsIOS'
 import { useObserverOnce } from '../../hooks/useObserver'
 
 import {
-  CakePartnerTag,
-  CakeSectionTag,
-  EcoSystemTagOuterWrapper,
-  FeatureTagsWrapper,
-  PartnerTagOuterWrapper,
-  PartnerTagsWrapper,
-  useEcosystemTagData,
-  usePartnerData,
+    CakePartnerTag,
+    CakeSectionTag,
+    EcoSystemTagOuterWrapper,
+    FeatureTagsWrapper,
+    PartnerTagOuterWrapper,
+    PartnerTagsWrapper,
+    useEcosystemTagData,
+    usePartnerData,
 } from './CakeSectionTag'
 
 const LINE_TRANSITION_TIMES = 0.35
@@ -468,7 +468,7 @@ const CakeSection: React.FC = () => {
         <Text
           fontSize={['16px', null, null, '20px']}
           fontWeight={600}
-          color={theme.isDark ? '#B8ADD2' : '#7A6EAA'}
+          color={theme.isDark ? '#F5B7B1' : '#AA464B'}
           textAlign="center"
           lineHeight="110%"
           padding="0px 16px"

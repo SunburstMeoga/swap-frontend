@@ -2,7 +2,7 @@ import { useTranslation } from '@pancakeswap/localization'
 import { Svg, SvgProps, Tag, TagProps } from '@pancakeswap/uikit'
 import useTheme from 'hooks/useTheme'
 import { memo, useMemo } from 'react'
-import {} from 'styled-components'
+import { } from 'styled-components'
 
 export const RewardPerDay: React.FC<{ rewardPerSec: number; symbol?: string } & TagProps> = memo(
   ({ rewardPerSec, symbol, ...props }) => {
@@ -38,7 +38,7 @@ const CakeOutlineIcon: React.FC<React.PropsWithChildren<SvgProps>> = memo((props
         stroke="#fff"
         strokeWidth={1.4}
         strokeLinejoin="round"
-        fill={props.color || '#7645D9'}
+        fill={props.color || '#DA251D'}
       />
     </Svg>
   )

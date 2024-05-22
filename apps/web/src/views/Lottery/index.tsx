@@ -18,11 +18,11 @@ import useGetNextLotteryEvent from './hooks/useGetNextLotteryEvent'
 import useShowMoreUserHistory from './hooks/useShowMoreUserRounds'
 import useStatusTransitions from './hooks/useStatusTransitions'
 import {
-  CHECK_PRIZES_BG,
-  FINISHED_ROUNDS_BG,
-  FINISHED_ROUNDS_BG_DARK,
-  GET_TICKETS_BG,
-  TITLE_BG,
+    CHECK_PRIZES_BG,
+    FINISHED_ROUNDS_BG,
+    FINISHED_ROUNDS_BG_DARK,
+    GET_TICKETS_BG,
+    TITLE_BG,
 } from './pageSectionStyles'
 
 const LotteryPage = styled.div`
@@ -52,7 +52,7 @@ const Lottery = () => {
           containerProps={{ style: { marginTop: '-30px' } }}
           background={GET_TICKETS_BG}
           concaveDivider
-          clipFill={{ light: '#7645D9' }}
+          clipFill={{ light: '#DA251D' }}
           dividerPosition="top"
           index={2}
         >

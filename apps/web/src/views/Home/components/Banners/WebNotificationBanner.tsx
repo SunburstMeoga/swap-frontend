@@ -154,7 +154,7 @@ const StyledSubheading = styled.div`
     background-clip: text;
     content: attr(data-text);
     text-shadow: 1.27551px 1.27551px 1.02041px rgba(0, 0, 0, 0.2);
-    -webkit-text-stroke: 5px #7645d9;
+    -webkit-text-stroke: 5px #DA251D;
     position: absolute;
     left: 0;
     top: 0;

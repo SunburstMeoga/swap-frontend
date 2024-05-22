@@ -71,7 +71,7 @@ export const PancakeSwapTheme = {
       warning: { main: '#F1DF38' },
       text: {
         primary: '#F4EEFF',
-        secondary: '#B8ADD2',
+        secondary: '#F5B7B1',
       },
       divider: '#383241',
       background: {

@@ -1,18 +1,18 @@
 import { ChainId } from '@pancakeswap/chains'
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  Box,
-  Button,
-  Flex,
-  LinkExternal,
-  Message,
-  MessageText,
-  ScanLink,
-  Skeleton,
-  Text,
-  VerifiedIcon,
-  useMatchBreakpoints,
-  useModalV2,
+    Box,
+    Button,
+    Flex,
+    LinkExternal,
+    Message,
+    MessageText,
+    ScanLink,
+    Skeleton,
+    Text,
+    VerifiedIcon,
+    useMatchBreakpoints,
+    useModalV2,
 } from '@pancakeswap/uikit'
 import { FarmWidget } from '@pancakeswap/widgets-internal'
 import ConnectWalletButton from 'components/ConnectWalletButton'
@@ -194,8 +194,8 @@ const MerklWarning: React.FC<{
 }> = ({ merklLink, hasFarm }) => {
   return (
     <StyleMerklWarning>
-      <Message variant="primary" icon={<VerifiedIcon color="#7645D9" />}>
-        <MessageText color="#7645D9">
+      <Message variant="primary" icon={<VerifiedIcon color="#DA251D" />}>
+        <MessageText color="#DA251D">
           <MerklNotice.Content hasFarm={hasFarm} merklLink={merklLink} linkColor="currentColor" />
         </MessageText>
       </Message>

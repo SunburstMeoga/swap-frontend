@@ -6,7 +6,7 @@ import { SvgProps } from "../types";
 const Icon: React.FC<React.PropsWithChildren<SvgProps>> = (props) => {
   const theme = useTheme();
   const primaryColor = theme.isDark ? "#372F47" : "#EEEAF4";
-  const secondaryColor = theme.isDark ? "#B8ADD2" : "#7A6EAA";
+  const secondaryColor = theme.isDark ? "#F5B7B1" : "#AA464B";
 
   return (
     <Svg viewBox="0 0 24 24" {...props}>

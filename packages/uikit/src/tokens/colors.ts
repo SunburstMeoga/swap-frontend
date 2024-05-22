@@ -77,7 +77,7 @@ export const darkColors = {
   text: "#F4EEFF",
   text99: "#F4EEFF99",
   textDisabled: "#666171",
-  textSubtle: "#B8ADD2",
+  textSubtle: "#F5B7B1",
   disabled: "#524B63",
   gradientPrimary: "linear-gradient(228.54deg, #1FC7D4 -13.69%, #9A6AFF 91.33%)",
   gradientBubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",

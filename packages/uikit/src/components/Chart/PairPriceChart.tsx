@@ -107,7 +107,7 @@ export const SwapLineChart: React.FC<SwapLineChartNewProps> = ({
           labelVisible: false,
           style: 3,
           width: 1,
-          color: isDark ? "#B8ADD2" : "#7A6EAA",
+          color: isDark ? "#F5B7B1" : "#AA464B",
         },
       },
     });

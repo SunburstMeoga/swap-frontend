@@ -172,7 +172,7 @@ export const wormHoleLightTheme = {
   },
   divider: '#E7E3EB',
   background: { default: 'rgb(233,247,255)', paper: 'rgb(53,54,88)' },
-  text: { primary: '#280D5F', secondary: '#7A6EAA' },
+  text: { primary: '#280D5F', secondary: '#AA464B' },
   error: {
     '50': lightenColor('#ED4B9E', 0.9),
     '100': lightenColor('#ED4B9E', 0.8),

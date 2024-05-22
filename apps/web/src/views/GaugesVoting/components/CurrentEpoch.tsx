@@ -1,16 +1,16 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { AutoRow, Balance, Box, ErrorIcon, FlexGap, Text, TooltipText, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  formatNumber,
-  getBalanceNumber,
-  getDecimalAmount,
-  getFullDisplayBalance,
+    formatNumber,
+    getBalanceNumber,
+    getDecimalAmount,
+    getFullDisplayBalance,
 } from '@pancakeswap/utils/formatBalance'
 import BN from 'bignumber.js'
 import dayjs from 'dayjs'
+import relativeTime from 'dayjs/plugin/relativeTime'
 import { Tooltips } from 'views/CakeStaking/components/Tooltips'
 import { useCurrentBlockTimestamp } from 'views/CakeStaking/hooks/useCurrentBlockTimestamp'
-import relativeTime from 'dayjs/plugin/relativeTime'
 import { useCurrentEpochEnd, useEpochOnTally, useNextEpochStart } from '../hooks/useEpochTime'
 import { useGaugesTotalWeight } from '../hooks/useGaugesTotalWeight'
 
@@ -120,7 +120,7 @@ export const CurrentEpoch = () => {
           <Balance bold fontSize={16} value={getBalanceNumber(new BN(totalWeight.toString()))} unit=" veCAKE" />
         </AutoRow>
         <AutoRow alignItems="center" flexDirection="row" justifyContent="flex-start" flexWrap="nowrap" mt="16px">
-          <ErrorIcon color="#7A6EAA" width="24px" mr="8px" />
+          <ErrorIcon color="#AA464B" width="24px" mr="8px" />
           <Text color="textSubtle" fontSize={12}>
             {t(
               'Results are updated weekly. Vote numbers are estimations based on the veCAKE balance at 00:00 UTC on the upcoming Thursday.',

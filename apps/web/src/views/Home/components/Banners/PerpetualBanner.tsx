@@ -1,22 +1,22 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  ArrowForwardIcon,
-  Button,
-  Link,
-  Text,
-  useIsomorphicEffect,
-  useMatchBreakpoints,
-  useModal,
+    ArrowForwardIcon,
+    Button,
+    Link,
+    Text,
+    useIsomorphicEffect,
+    useMatchBreakpoints,
+    useModal,
 } from '@pancakeswap/uikit'
 import USCitizenConfirmModal from 'components/Modal/USCitizenConfirmModal'
 import { useActiveChainId } from 'hooks/useActiveChainId'
-import { useUserNotUsCitizenAcknowledgement, IdType } from 'hooks/useUserIsUsCitizenAcknowledgement'
+import { IdType, useUserNotUsCitizenAcknowledgement } from 'hooks/useUserIsUsCitizenAcknowledgement'
 import Image from 'next/legacy/image'
 import { memo, useMemo, useRef } from 'react'
 import { styled, useTheme } from 'styled-components'
 import { getPerpetualUrl } from 'utils/getPerpetualUrl'
-import { perpetualImage, perpetualMobileImage } from './images'
 import * as S from './Styled'
+import { perpetualImage, perpetualMobileImage } from './images'
 
 const RightWrapper = styled.div`
   position: absolute;
@@ -77,7 +77,7 @@ const PerpetualBanner = () => {
   return (
     <S.Wrapper
       style={{
-        background: `linear-gradient(140deg, #7645d9 0%, #452a7a 100%)`,
+        background: `linear-gradient(140deg, #DA251D 0%, #452a7a 100%)`,
       }}
     >
       <S.Inner>
