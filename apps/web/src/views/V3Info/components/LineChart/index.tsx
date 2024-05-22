@@ -52,7 +52,7 @@ const LineChart = ({
 }: LineChartProps) => {
   // theming
   const { theme } = useTheme()
-  const textColor = theme.isDark ? '$F4EEFF' : '#280D5F'
+  const textColor = theme.isDark ? '$FDEDEC' : '#280D5F'
   // chart pointer
   const chartRef = useRef<HTMLDivElement>(null)
   const [chartCreated, setChart] = useState<IChartApi | undefined>()

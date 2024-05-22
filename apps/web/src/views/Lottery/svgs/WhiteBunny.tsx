@@ -26,7 +26,7 @@ const WhiteBunny: React.FC<React.PropsWithChildren<SvgProps>> = (props) => {
       />
       <path
         d="M25.5 17.6933C25.5 21.7434 20.1274 25.0267 13.5 25.0267C6.87258 25.0267 1.5 21.7434 1.5 17.6933V15.8267H25.5V17.6933Z"
-        fill="#F4EEFF"
+        fill="#FDEDEC"
       />
       <path
         fillRule="evenodd"
