@@ -34,7 +34,7 @@ const sentryWebpackPluginOptions =
     : {
         hideSourceMaps: false,
         silent: true, // Suppresses all logs
-        dryRun: !process.env.SENTRY_AUTH_TOKEN,
+        // dryRun: !process.env.SENTRY_AUTH_TOKEN,
       }
 
 const workerDeps = Object.keys(smartRouterPkgs.dependencies)
