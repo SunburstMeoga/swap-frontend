@@ -1,5 +1,5 @@
+import { Flex, Svg, SvgProps, Text } from '@pancakeswap/uikit'
 import { styled } from 'styled-components'
-import { Svg, SvgProps, Text, Flex } from '@pancakeswap/uikit'
 
 export const PinkBall: React.FC<React.PropsWithChildren<SvgProps>> = (props) => {
   return (
@@ -84,7 +84,7 @@ export const LilacBall: React.FC<React.PropsWithChildren<SvgProps>> = (props) =>
 export const TealBall: React.FC<React.PropsWithChildren<SvgProps>> = (props) => {
   return (
     <Svg viewBox="0 0 32 32" {...props}>
-      <circle cx="16" cy="16" r="16" fill="#1FC7D4" />
+      <circle cx="16" cy="16" r="16" fill="#EC7063" />
       <g style={{ mixBlendMode: 'multiply' }} opacity="0.1">
         <path
           fillRule="evenodd"
@@ -124,7 +124,7 @@ export const TealBall: React.FC<React.PropsWithChildren<SvgProps>> = (props) => 
 export const AquaBall: React.FC<React.PropsWithChildren<SvgProps>> = (props) => {
   return (
     <Svg viewBox="0 0 32 32" {...props}>
-      <circle cx="16" cy="16" r="16" fill="#31D0AA" />
+      <circle cx="16" cy="16" r="16" fill="#DA251D" />
       <g style={{ mixBlendMode: 'multiply' }} opacity="0.1">
         <path
           fillRule="evenodd"

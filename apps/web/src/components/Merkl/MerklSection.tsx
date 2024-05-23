@@ -1,15 +1,15 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  AutoRow,
-  Box,
-  Button,
-  Flex,
-  Link,
-  Message,
-  MessageText,
-  Text,
-  TooltipText,
-  useTooltip,
+    AutoRow,
+    Box,
+    Button,
+    Flex,
+    Link,
+    Message,
+    MessageText,
+    Text,
+    TooltipText,
+    useTooltip,
 } from '@pancakeswap/uikit'
 import { CurrencyLogo } from '@pancakeswap/widgets-internal'
 import { LightGreyCard } from 'components/Card'
@@ -109,7 +109,7 @@ export function MerklSection({
       {isStakedInMCv3 ? (
         <Message variant="warning">
           <MessageText color="textSubtle">
-            {t('To earn rewards on Merkl, unstake this position from PancakeSwap Farms.')}
+            {t('To earn rewards on Merkl, unstake this position from Ex.Zone Farms.')}
             <br />
             {learnMoreComp}
           </MessageText>
@@ -136,7 +136,7 @@ export function MerklSection({
               external
               color="currentColor"
               style={{ display: 'inline-flex' }}
-              href="https://merkl.angle.money/?times=active%2Cfuture%2C&phrase=PancakeSwap"
+              href="https://merkl.angle.money/?times=active%2Cfuture%2C&phrase=Ex.Zone"
             >
               {t('here')}
             </Link>{' '}

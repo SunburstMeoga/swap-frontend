@@ -1,19 +1,19 @@
 import { Trans, useTranslation } from '@pancakeswap/localization'
 import { CurrencyAmount, ERC20Token, Fraction, NATIVE, Pair, Price, WNATIVE, ZERO } from '@pancakeswap/sdk'
 import {
-  AtomBox,
-  AutoColumn,
-  AutoRow,
-  Box,
-  Button,
-  CardBody,
-  Dots,
-  Message,
-  MessageText,
-  PreTitle,
-  RowBetween,
-  Spinner,
-  Text,
+    AtomBox,
+    AutoColumn,
+    AutoRow,
+    Box,
+    Button,
+    CardBody,
+    Dots,
+    Message,
+    MessageText,
+    PreTitle,
+    RowBetween,
+    Spinner,
+    Text,
 } from '@pancakeswap/uikit'
 import { useUserSlippagePercent } from '@pancakeswap/utils/user'
 import { FeeAmount, Pool, Position, priceToClosestTick, TickMath } from '@pancakeswap/v3-sdk'
@@ -616,7 +616,7 @@ function V2PairMigrate({
               <Message variant="warning">
                 <MessageText>
                   {t(
-                    'You are the first liquidity provider for this PancakeSwap V3 pool. Your liquidity will migrate at the current V2 price.',
+                    'You are the first liquidity provider for this Ex.Zone V3 pool. Your liquidity will migrate at the current V2 price.',
                   )}
                   <MessageText>
                     {t('Your transaction cost will be much higher as it includes the gas to create the pool.')}
@@ -675,7 +675,7 @@ function V2PairMigrate({
                 </RowBetween>
               </AutoColumn>
               <Text fontSize={14} style={{ marginTop: 8, fontWeight: 400 }}>
-                {t('You should only deposit liquidity into PancakeSwap V3 at a price you believe is correct.')} <br />
+                {t('You should only deposit liquidity into Ex.Zone V3 at a price you believe is correct.')} <br />
                 {t(
                   'If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so.',
                 )}

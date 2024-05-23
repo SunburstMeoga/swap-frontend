@@ -1,14 +1,14 @@
-import { gql, GraphQLClient } from 'graphql-request'
-import { STABLESWAP_SUBGRAPHS_URLS, V2_SUBGRAPH_URLS, V3_SUBGRAPH_URLS } from 'config/constants/endpoints'
 import { ChainId } from '@pancakeswap/chains'
-import { getBlocksFromTimestamps } from 'utils/getBlocksFromTimestamps'
-import dayjs, { Dayjs } from 'dayjs'
-import { getCakeContract } from 'utils/contractHelpers'
-import { formatEther } from 'viem'
-import { getCakeVaultAddress } from 'utils/addressHelpers'
 import addresses from 'config/constants/contracts'
-import { bitQueryServerClient } from 'utils/graphql'
+import { STABLESWAP_SUBGRAPHS_URLS, V2_SUBGRAPH_URLS, V3_SUBGRAPH_URLS } from 'config/constants/endpoints'
+import dayjs, { Dayjs } from 'dayjs'
+import { gql, GraphQLClient } from 'graphql-request'
 import { multiChainName } from 'state/info/constant'
+import { getCakeVaultAddress } from 'utils/addressHelpers'
+import { getCakeContract } from 'utils/contractHelpers'
+import { getBlocksFromTimestamps } from 'utils/getBlocksFromTimestamps'
+import { bitQueryServerClient } from 'utils/graphql'
+import { formatEther } from 'viem'
 
 // Values fetched from TheGraph and BitQuery jan 24, 2022
 const txCount = 54780336
@@ -49,7 +49,7 @@ export const getTotalTvl = async () => {
       query userCount($since: ISO8601DateTime, $till: ISO8601DateTime) {
         ethereum: ethereum(network: ethereum) {
           dexTrades(
-            exchangeName: { in: ["Pancake", "Pancake v2", "PancakeSwap"] }
+            exchangeName: { in: ["Pancake", "Pancake v2", "Ex.Zone"] }
             date: { since: $since, till: $till }
           ) {
             count(uniq: senders)
@@ -57,7 +57,7 @@ export const getTotalTvl = async () => {
         }
         bsc: ethereum(network: bsc) {
           dexTrades(
-            exchangeName: { in: ["Pancake", "Pancake v2", "PancakeSwap"] }
+            exchangeName: { in: ["Pancake", "Pancake v2", "Ex.Zone"] }
             date: { since: $since, till: $till }
           ) {
             count(uniq: senders)

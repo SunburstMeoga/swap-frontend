@@ -74,7 +74,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1, viewport-fit=cover"
         />
-        <meta name="theme-color" content="#1FC7D4" />
+        <meta name="theme-color" content="#EC7063" />
       </Head>
       <DefaultSeo {...SEO} />
       <WagmiProvider reconnectOnMount config={wagmiConfig}>

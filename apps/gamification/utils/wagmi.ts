@@ -18,7 +18,7 @@ export const injectedConnector = injected({
 })
 
 export const coinbaseConnector = coinbaseWallet({
-  appName: 'PancakeSwap',
+  appName: 'Ex.Zone',
   appLogoUrl: 'https://pancakeswap.com/logo.png',
 })
 
@@ -74,7 +74,7 @@ export const transports = chains.reduce((ts, chain) => {
 
 export const cyberWalletConnector = isCyberWallet()
   ? createCyberWalletConnector({
-      name: 'PancakeSwap',
+      name: 'Ex.Zone',
       appId: 'b825cd87-2db3-456d-b108-d61e74d89771',
     })
   : undefined

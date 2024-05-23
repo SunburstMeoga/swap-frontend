@@ -1,14 +1,14 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  AutoRenewIcon,
-  Button,
-  ChevronRightIcon,
-  Flex,
-  IconButton,
-  Message,
-  RocketIcon,
-  Skeleton,
-  Text,
+    AutoRenewIcon,
+    Button,
+    ChevronRightIcon,
+    Flex,
+    IconButton,
+    Message,
+    RocketIcon,
+    Skeleton,
+    Text,
 } from '@pancakeswap/uikit'
 import { formatNumber } from '@pancakeswap/utils/formatBalance'
 import BigNumber from 'bignumber.js'
@@ -205,7 +205,7 @@ const MainView: React.FC<React.PropsWithChildren<MainViewProps>> = ({
               <Message variant="danger" mb="12px">
                 <Text color="danger">
                   {t(
-                    'Hold some CAKE in your wallet or on PancakeSwap at the snapshot block to get voting power for future proposals.',
+                    'Hold some CAKE in your wallet or on Ex.Zone at the snapshot block to get voting power for future proposals.',
                   )}
                 </Text>
               </Message>

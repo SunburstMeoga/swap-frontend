@@ -1,11 +1,11 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { AutoColumn, Box, Button, Card, Heading, Text } from '@pancakeswap/uikit'
+import isUndefinedOrNull from '@pancakeswap/utils/isUndefinedOrNull'
 import Page from 'components/Layout/Page'
 import dayjs from 'dayjs'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import useTheme from 'hooks/useTheme'
 import { useEffect, useMemo, useState } from 'react'
-import isUndefinedOrNull from '@pancakeswap/utils/isUndefinedOrNull'
 import BarChart from './components/BarChart/alt'
 import { DarkGreyCard } from './components/Card'
 import LineChart from './components/LineChart/alt'
@@ -16,11 +16,11 @@ import TokenTable from './components/TokenTable'
 import TransactionsTable from './components/TransactionsTable'
 import { ChartCardsContainer, MonoSpace, ProtocolWrapper } from './components/shared'
 import {
-  useProtocolChartData,
-  useProtocolData,
-  useProtocolTransactionData,
-  useTopPoolsData,
-  useTopTokensData,
+    useProtocolChartData,
+    useProtocolData,
+    useProtocolTransactionData,
+    useTopPoolsData,
+    useTopTokensData,
 } from './hooks'
 import { useTransformedVolumeData } from './hooks/chart'
 import { VolumeWindow } from './types'
@@ -112,7 +112,7 @@ export default function Home() {
   return (
     <Page>
       <Heading scale="lg" mb="16px">
-        {t('PancakeSwap Info & Analytics')}
+        {t('Ex.Zone Info & Analytics')}
       </Heading>
       <ChartCardsContainer>
         <Card>

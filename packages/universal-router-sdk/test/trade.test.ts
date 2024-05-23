@@ -1,13 +1,13 @@
 import { ChainId } from '@pancakeswap/chains'
 import {
-  CurrencyAmount,
-  ERC20Token,
-  Ether,
-  Pair,
-  Percent,
-  TradeType,
-  Route as V2Route,
-  Trade as V2Trade,
+    CurrencyAmount,
+    ERC20Token,
+    Ether,
+    Pair,
+    Percent,
+    TradeType,
+    Route as V2Route,
+    Trade as V2Trade,
 } from '@pancakeswap/sdk'
 import { PoolType, SmartRouter, SmartRouterTrade, V2Pool, V3Pool } from '@pancakeswap/smart-router'
 import { Pool, Route as V3Route, Trade as V3Trade } from '@pancakeswap/v3-sdk'
@@ -44,7 +44,7 @@ const feeOptions = {
   fee: new Percent(TEST_FEE, 10000n),
 }
 
-describe('PancakeSwap Universal Router Trade', () => {
+describe('Ex.Zone Universal Router Trade', () => {
   const chainId = ChainId.ETHEREUM
   const liquidity = parseEther('1000')
 
@@ -1814,7 +1814,7 @@ describe('PancakeSwap Universal Router Trade', () => {
   })
 })
 
-describe('PancakeSwap StableSwap Through Universal Router, BSC Network Only', () => {
+describe('Ex.Zone StableSwap Through Universal Router, BSC Network Only', () => {
   const chainId = ChainId.BSC
   const liquidity = parseEther('1000')
 

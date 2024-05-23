@@ -2,28 +2,28 @@ import { ChainId } from '@pancakeswap/chains'
 import { isActiveV3Farm } from '@pancakeswap/farms'
 import { Currency, CurrencyAmount, Fraction, Percent, Price, Token } from '@pancakeswap/sdk'
 import {
-  AtomBox,
-  AutoColumn,
-  AutoRow,
-  Box,
-  Button,
-  Card,
-  CardBody,
-  ExpandableLabel,
-  Flex,
-  Heading,
-  Message,
-  NotFound,
-  PreTitle,
-  RowBetween,
-  ScanLink,
-  Spinner,
-  SyncAltIcon,
-  Tag,
-  Text,
-  Toggle,
-  useMatchBreakpoints,
-  useModal,
+    AtomBox,
+    AutoColumn,
+    AutoRow,
+    Box,
+    Button,
+    Card,
+    CardBody,
+    ExpandableLabel,
+    Flex,
+    Heading,
+    Message,
+    NotFound,
+    PreTitle,
+    RowBetween,
+    ScanLink,
+    Spinner,
+    SyncAltIcon,
+    Tag,
+    Text,
+    Toggle,
+    useMatchBreakpoints,
+    useModal,
 } from '@pancakeswap/uikit'
 
 import { ConfirmationModalContent, NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
@@ -512,7 +512,7 @@ export default function PoolPage() {
           <Text display="inline" bold mr="0.25em">{`${currencyQuote?.symbol}-${currencyBase?.symbol}`}</Text>
           <Text display="inline">
             {t(
-              'has an active PancakeSwap farm. Stake your position in the farm to start earning with the indicated APR with CAKE farming.',
+              'has an active Ex.Zone farm. Stake your position in the farm to start earning with the indicated APR with CAKE farming.',
             )}
           </Text>
           <NextLinkFromReactRouter to="/farms">

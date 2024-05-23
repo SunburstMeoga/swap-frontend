@@ -1,23 +1,23 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { TokenList, Version } from '@pancakeswap/token-lists'
 import {
-  acceptListUpdate,
-  disableList,
-  enableList,
-  removeList,
-  useFetchListCallback,
+    acceptListUpdate,
+    disableList,
+    enableList,
+    removeList,
+    useFetchListCallback,
 } from '@pancakeswap/token-lists/react'
 import {
-  AutoColumn,
-  Button,
-  CheckmarkIcon,
-  CogIcon,
-  Column,
-  Input,
-  LinkExternal,
-  Text,
-  Toggle,
-  useTooltip,
+    AutoColumn,
+    Button,
+    CheckmarkIcon,
+    CogIcon,
+    Column,
+    Input,
+    LinkExternal,
+    Text,
+    Toggle,
+    useTooltip,
 } from '@pancakeswap/uikit'
 import { ListLogo } from '@pancakeswap/widgets-internal'
 
@@ -224,7 +224,7 @@ function ManageLists({
         }
 
         if (l1 && l2) {
-          // Always make PancakeSwap list in top.
+          // Always make Ex.Zone list in top.
           const keyword = 'pancakeswap'
           if (!l1.name.toLowerCase().includes(keyword) && l2.name.toLowerCase().includes(keyword)) {
             return 1

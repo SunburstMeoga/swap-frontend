@@ -1,17 +1,17 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Box, Flex, Image, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  ButtonLinkAction,
-  FloatingGraphic,
-  GraphicDetail,
-  LinkExternalAction,
-  PancakeSwapBadge,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    ButtonLinkAction,
+    FloatingGraphic,
+    GraphicDetail,
+    LinkExternalAction,
+    PancakeSwapBadge,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import styled from 'styled-components'
@@ -77,8 +77,8 @@ export const NemesisDownfallBanner = () => {
         title={
           <BannerTitle variant="orange">
             {isMobile || isTablet
-              ? t('Nemesis Downfall Now on PancakeSwap')
-              : t('Nemesis Downfall Now Live on PancakeSwap Gaming Marketplace')}
+              ? t('Nemesis Downfall Now on Ex.Zone')
+              : t('Nemesis Downfall Now Live on Ex.Zone Gaming Marketplace')}
           </BannerTitle>
         }
         actions={

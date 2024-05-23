@@ -3,10 +3,10 @@ import { Card, Flex, Heading } from '@pancakeswap/uikit'
 import Page from 'components/Layout/Page'
 import { useMemo } from 'react'
 import {
-  useAllTokenDataQuery,
-  useProtocolChartDataQuery,
-  useProtocolDataQuery,
-  useProtocolTransactionsQuery,
+    useAllTokenDataQuery,
+    useProtocolChartDataQuery,
+    useProtocolDataQuery,
+    useProtocolTransactionsQuery,
 } from 'state/info/hooks'
 import { TokenData } from 'state/info/types'
 import { styled } from 'styled-components'
@@ -66,7 +66,7 @@ const Overview: React.FC<React.PropsWithChildren> = () => {
   return (
     <Page>
       <Heading scale="lg" mb="16px" id="info-overview-title">
-        {t('PancakeSwap Info & Analytics')}
+        {t('Ex.Zone Info & Analytics')}
       </Heading>
       <ChartCardsContainer>
         <Card>

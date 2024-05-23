@@ -1,19 +1,19 @@
 import { useTranslation } from "@pancakeswap/localization";
-import { useMemo, memo } from "react";
+import { memo, useMemo } from "react";
 import { styled } from "styled-components";
 import { SpaceProps } from "styled-system";
 
 import {
-  Flex,
-  ButtonMenuItem,
-  SwapLineChart,
-  PairDataTimeWindowEnum,
-  Box,
-  Text,
-  BunnyKnownPlaceholder,
+    Box,
+    BunnyKnownPlaceholder,
+    ButtonMenuItem,
+    Flex,
+    PairDataTimeWindowEnum,
+    SwapLineChart,
+    Text,
 } from "@pancakeswap/uikit";
-import { PriceData } from "./types";
 import { FullWidthButtonMenu } from "./FullWidthButtonMenu";
+import { PriceData } from "./types";
 
 const PriceDisplayContainer = styled(Flex)`
   padding: 0.25em 0.5em;
@@ -49,7 +49,7 @@ export const PriceChart = memo(function PriceChart({
     () =>
       [
         priceUpper !== undefined
-          ? { title: "upper", color: "#31D0AA", price: parseFloat(String(priceUpper)) }
+          ? { title: "upper", color: "#DA251D", price: parseFloat(String(priceUpper)) }
           : undefined,
         priceCurrent !== undefined
           ? { title: "current", color: "#BDC2C4", price: parseFloat(String(priceCurrent)) }

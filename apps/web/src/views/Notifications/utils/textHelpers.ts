@@ -2,11 +2,11 @@ import { TranslateFunction } from '@pancakeswap/localization'
 
 export const getOnBoardingDescriptionMessage = (isOnBoarded: boolean, t: TranslateFunction) => {
   let onBoardingDescription: string = t(
-    'Finally, subscribe to notifications to stay informed on the latest news and updates that PancakeSwap has to offer.',
+    'Finally, subscribe to notifications to stay informed on the latest news and updates that Ex.Zone has to offer.',
   )
   if (!isOnBoarded) {
     onBoardingDescription = t(
-      'Get started with notifications from PancakeSwap. First authorize notifications by signing in your wallet',
+      'Get started with notifications from Ex.Zone. First authorize notifications by signing in your wallet',
     )
   }
   return onBoardingDescription
@@ -24,7 +24,7 @@ export const getOnBoardingButtonText = (
 
   if (isStep1) return t('Enable Notifications')
   if (isStep2) return t('Sign In With Wallet')
-  if (isStep3) return t('Subscribe To PancakeSwap')
+  if (isStep3) return t('Subscribe To Ex.Zone')
 
   return t('Enable Notifications')
 }

@@ -1,22 +1,22 @@
 import { ChainId, Currency, CurrencyAmount } from '@pancakeswap/sdk'
 import {
-  Balance,
-  Box,
-  Button,
-  Card,
-  CardBody,
-  CheckmarkIcon,
-  Container,
-  Flex,
-  FlexGap,
-  Heading,
-  Link,
-  LogoRoundIcon,
-  Skeleton,
-  Step,
-  StepStatus,
-  Stepper,
-  Text,
+    Balance,
+    Box,
+    Button,
+    Card,
+    CardBody,
+    CheckmarkIcon,
+    Container,
+    Flex,
+    FlexGap,
+    Heading,
+    Link,
+    LogoRoundIcon,
+    Skeleton,
+    Step,
+    StepStatus,
+    Stepper,
+    Text,
 } from '@pancakeswap/uikit'
 import { Ifo, NextLinkFromReactRouter as RouterLink } from '@pancakeswap/widgets-internal'
 import every from 'lodash/every'
@@ -303,7 +303,7 @@ const IfoSteps: React.FC<React.PropsWithChildren<TypeProps>> = ({
               {t('Activate your Profile')}
             </Heading>
             <Text color="textSubtle" small mb="16px">
-              {t('You’ll need an active PancakeSwap Profile to take part in an IFO!')}
+              {t('You’ll need an active Ex.Zone Profile to take part in an IFO!')}
             </Text>
             {renderAccountStatus()}
           </CardBody>

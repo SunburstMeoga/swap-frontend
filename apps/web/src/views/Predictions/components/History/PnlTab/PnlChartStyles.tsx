@@ -10,7 +10,7 @@
  * I'll leave TODO: comment here to check back later if there is update to types
  *
  */
-import { styled, keyframes } from 'styled-components'
+import { keyframes, styled } from 'styled-components'
 
 interface SliceProps {
   length: number
@@ -53,7 +53,7 @@ export const LostSlice = styled(DefaultSlice)`
 `
 
 export const WonSlice = styled(DefaultSlice)`
-  stroke: #31d0aa;
+  stroke: #DA251D;
   stroke-dashoffset: ${(props) => -props.offset};
   animation: ${DrawAnimation} 1s ease, ${OffsetAnimation} 1s ease;
 `

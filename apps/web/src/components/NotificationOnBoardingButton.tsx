@@ -1,12 +1,12 @@
 import { TranslateFunction, useTranslation } from '@pancakeswap/localization'
 import { AutoColumn, CircleLoader, Flex, Text, useToast } from '@pancakeswap/uikit'
 import {
-  usePrepareRegistration,
-  useRegister,
-  useSubscribe,
-  useSubscription,
-  useWeb3InboxAccount,
-  useWeb3InboxClient,
+    usePrepareRegistration,
+    useRegister,
+    useSubscribe,
+    useSubscription,
+    useWeb3InboxAccount,
+    useWeb3InboxClient,
 } from '@web3inbox/react'
 import { CommitButton } from 'components/CommitButton'
 import ConnectWalletButton from 'components/ConnectWalletButton'
@@ -30,7 +30,7 @@ const getOnBoardingButtonText = (
 
   if (isStep1) return t('Enable Notifications')
   if (isStep2) return t('Sign In With Wallet')
-  if (isStep3) return t('Subscribe To PancakeSwap')
+  if (isStep3) return t('Subscribe To Ex.Zone')
 
   return t('Enable Notifications')
 }

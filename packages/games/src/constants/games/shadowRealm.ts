@@ -5,7 +5,7 @@ export const shadowRealm: GameType = {
   projectName: 'ChainzStudios',
   title: 'Shadow Realms',
   subTitle: 'Embark on Your Adventure in Shadow Realms',
-  description: `Join the epic RPG experience crafted by ChainZ Studios on PancakeSwap. Conquer invaders and become the ultimate Awakener. Begin your journey now!`,
+  description: `Join the epic RPG experience crafted by ChainZ Studios on Ex.Zone. Conquer invaders and become the ultimate Awakener. Begin your journey now!`,
   publishDate: 1711612800,
   genre: GenreType.MMORPG,
   trendingTags: [
@@ -68,7 +68,7 @@ export const shadowRealm: GameType = {
   },
   playlist: [],
   socialMedia: {
-    telegram: 'https://t.me/PancakeSwap/',
+    telegram: 'https://t.me/Ex.Zone/',
     discord: 'https://discord.gg/pancakeswap',
   },
 }

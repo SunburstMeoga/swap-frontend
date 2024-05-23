@@ -1,17 +1,17 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  ButtonLinkAction,
-  FloatingGraphic,
-  GraphicDetail,
-  LinkExternalAction,
-  PancakeSwapBadge,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    ButtonLinkAction,
+    FloatingGraphic,
+    GraphicDetail,
+    LinkExternalAction,
+    PancakeSwapBadge,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import styled from 'styled-components'
@@ -71,8 +71,8 @@ export const V4InfoBanner = () => {
         title={
           <BannerTitle variant="purple">
             {isMobile || isTablet
-              ? t('Introducing PancakeSwap v4')
-              : t('Your DEX Your Innovation Introducing PancakeSwap v4')}
+              ? t('Introducing Ex.Zone v4')
+              : t('Your DEX Your Innovation Introducing Ex.Zone v4')}
           </BannerTitle>
         }
         actions={

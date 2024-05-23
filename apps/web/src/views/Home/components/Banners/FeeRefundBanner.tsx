@@ -1,15 +1,15 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Flex, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  GraphicDetail,
-  LinkExternalAction,
-  PancakeSwapBadge,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    GraphicDetail,
+    LinkExternalAction,
+    PancakeSwapBadge,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import styled from 'styled-components'
@@ -85,7 +85,7 @@ export const FeeRefundBanner = () => {
           <BannerTitle variant="purple">
             {isMobile || isTablet
               ? t('Up to $8M in interface fees paid refunded!')
-              : t('Get up to $8M USD in interface fees paid refunded on PancakeSwap')}
+              : t('Get up to $8M USD in interface fees paid refunded on Ex.Zone')}
           </BannerTitle>
         }
         actions={

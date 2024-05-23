@@ -1,37 +1,38 @@
 import { ChainId } from '@pancakeswap/chains'
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  AtomBox,
-  AutoColumn,
-  AutoRow,
-  Button,
-  ButtonProps,
-  Checkbox,
-  Flex,
-  InjectedModalProps,
-  Message,
-  MessageText,
-  Modal,
-  ModalV2,
-  NotificationDot,
-  PancakeToggle,
-  PreTitle,
-  QuestionHelper,
-  RowFixed,
-  Text,
-  ThemeSwitcher,
-  Toggle,
+    AtomBox,
+    AutoColumn,
+    AutoRow,
+    Button,
+    ButtonProps,
+    Checkbox,
+    Flex,
+    InjectedModalProps,
+    Message,
+    MessageText,
+    Modal,
+    ModalV2,
+    NotificationDot,
+    PancakeToggle,
+    PreTitle,
+    QuestionHelper,
+    RowFixed,
+    Text,
+    ThemeSwitcher,
+    Toggle,
 } from '@pancakeswap/uikit'
 import {
-  useAudioPlay,
-  useExpertMode,
-  useUserExpertModeAcknowledgement,
-  useUserSingleHopOnly,
+    useAudioPlay,
+    useExpertMode,
+    useUserExpertModeAcknowledgement,
+    useUserSingleHopOnly,
 } from '@pancakeswap/utils/user'
 import { ExpertModal } from '@pancakeswap/widgets-internal'
 import { TOKEN_RISK } from 'components/AccessRisk'
 import AccessRiskTooltips from 'components/AccessRisk/AccessRiskTooltips'
 import { useActiveChainId } from 'hooks/useActiveChainId'
+import { useSpeedQuote } from 'hooks/useSpeedQuote'
 import useTheme from 'hooks/useTheme'
 import { useWebNotifications } from 'hooks/useWebNotifications'
 import { ReactNode, Suspense, lazy, useCallback, useState } from 'react'
@@ -39,15 +40,14 @@ import { useSwapActionHandlers } from 'state/swap/useSwapActionHandlers'
 import { useSubgraphHealthIndicatorManager, useUserUsernameVisibility } from 'state/user/hooks'
 import { useUserShowTestnet } from 'state/user/hooks/useUserShowTestnet'
 import { useUserTokenRisk } from 'state/user/hooks/useUserTokenRisk'
-import { useSpeedQuote } from 'hooks/useSpeedQuote'
 import {
-  useMMLinkedPoolByDefault,
-  useOnlyOneAMMSourceEnabled,
-  useRoutingSettingChanged,
-  useUserSplitRouteEnable,
-  useUserStableSwapEnable,
-  useUserV2SwapEnable,
-  useUserV3SwapEnable,
+    useMMLinkedPoolByDefault,
+    useOnlyOneAMMSourceEnabled,
+    useRoutingSettingChanged,
+    useUserSplitRouteEnable,
+    useUserStableSwapEnable,
+    useUserV2SwapEnable,
+    useUserV3SwapEnable,
 } from 'state/user/smartRouter'
 import { styled } from 'styled-components'
 import GasSettings from './GasSettings'
@@ -377,7 +377,7 @@ function RoutingSettings() {
           <PreTitle mb="24px">{t('Liquidity source')}</PreTitle>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>PancakeSwap V3</Text>
+              <Text>Ex.Zone V3</Text>
               <QuestionHelper
                 text={
                   <Flex>
@@ -401,7 +401,7 @@ function RoutingSettings() {
           </Flex>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>PancakeSwap V2</Text>
+              <Text>Ex.Zone V2</Text>
               <QuestionHelper
                 text={
                   <Flex flexDirection="column">
@@ -426,7 +426,7 @@ function RoutingSettings() {
           </Flex>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>PancakeSwap {t('StableSwap')}</Text>
+              <Text>Ex.Zone {t('StableSwap')}</Text>
               <QuestionHelper
                 text={
                   <Flex flexDirection="column">
@@ -453,7 +453,7 @@ function RoutingSettings() {
           </Flex>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>{`PancakeSwap ${t('MM Linked Pool')}`}</Text>
+              <Text>{`Ex.Zone ${t('MM Linked Pool')}`}</Text>
               <QuestionHelper
                 text={
                   <Flex flexDirection="column">
