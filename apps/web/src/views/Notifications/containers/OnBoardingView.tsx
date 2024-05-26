@@ -35,7 +35,7 @@ const OnBoardingView = ({ isRegistered }: IOnBoardingProps) => {
         </Box>
         <FlexGap rowGap="12px" flexDirection="column" justifyContent="center" alignItems="center">
           <Text fontSize="24px" fontWeight="600" lineHeight="120%" textAlign="center">
-            {t('Notifications From Ex.Zone')}
+            {t('Notifications From PGSWAP FINANCE')}
           </Text>
           <Text fontSize="16px" textAlign="center" color="textSubtle">
             {onBoardingDescription}

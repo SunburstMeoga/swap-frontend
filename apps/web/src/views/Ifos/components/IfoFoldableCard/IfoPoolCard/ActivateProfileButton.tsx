@@ -65,7 +65,7 @@ export function ActivateProfileButton({ saleFinished }: Props) {
       content={
         <ContentText>
           {saleFinished
-            ? t('Activate Ex.Zone Profile to take part in next IFO.')
+            ? t('Activate PGSWAP FINANCE Profile to take part in next IFO.')
             : t('You need to create a profile to participate in the IFO.')}
         </ContentText>
       }

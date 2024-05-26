@@ -15,7 +15,7 @@ export const IfoPageLayout = ({ children }) => {
   const [userNotUsCitizenAcknowledgement] = useUserNotUsCitizenAcknowledgement(IdType.IFO)
   const [onUSCitizenModalPresent] = useModal(
     <USCitizenConfirmModal
-      title={t('Ex.Zone IFOs')}
+      title={t('PGSWAP FINANCE IFOs')}
       id={IdType.IFO}
       checks={[
         {

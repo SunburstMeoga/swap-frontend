@@ -41,7 +41,7 @@ export const Quest = () => {
           </Flex>
         </Flex>
         <StyledHeading m="16px 0" as="h1">
-          Ex.Zone Multichain Celebration - Base
+          PGSWAP FINANCE Multichain Celebration - Base
         </StyledHeading>
         <Flex mb="32px">
           <CalenderIcon mr="8px" />

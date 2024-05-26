@@ -109,7 +109,7 @@ export function MerklSection({
       {isStakedInMCv3 ? (
         <Message variant="warning">
           <MessageText color="textSubtle">
-            {t('To earn rewards on Merkl, unstake this position from Ex.Zone Farms.')}
+            {t('To earn rewards on Merkl, unstake this position from PGSWAP FINANCE Farms.')}
             <br />
             {learnMoreComp}
           </MessageText>
@@ -136,7 +136,7 @@ export function MerklSection({
               external
               color="currentColor"
               style={{ display: 'inline-flex' }}
-              href="https://merkl.angle.money/?times=active%2Cfuture%2C&phrase=Ex.Zone"
+              href="https://merkl.angle.money/?times=active%2Cfuture%2C&phrase=PGSWAP FINANCE"
             >
               {t('here')}
             </Link>{' '}

@@ -11,7 +11,7 @@ export const PancakeSwapBadge: React.FC<React.PropsWithChildren<PancakeSwapBadge
   return (
     <Badge
       logo={<BadgeLogo src={pancakeSwapLogo} alt="pancakeSwapLogo" />}
-      text={compact ? null : <BadgeText color={whiteText ? "#ffffff" : "#090909"}>Ex.Zone</BadgeText>}
+      text={compact ? null : <BadgeText color={whiteText ? "#ffffff" : "#090909"}>PGSWAP FINANCE</BadgeText>}
     />
   );
 };

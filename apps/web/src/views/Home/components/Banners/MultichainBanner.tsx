@@ -45,7 +45,7 @@ export const MultiChainBanner = () => {
     <BannerContainer background="radial-gradient(338.53% 307.7% at 0% -37.33%, #5C6BB4 0%, #5AE1EC 100%)">
       <BannerMain
         badges={<PancakeSwapBadge whiteText />}
-        title={<BannerTitle variant="orange">{t('Ex.Zone Multichain Celebration')}</BannerTitle>}
+        title={<BannerTitle variant="orange">{t('PGSWAP FINANCE Multichain Celebration')}</BannerTitle>}
         desc={isMobile ? null : <BannerDesc color="white">{t('Starting MAR 14 - Over $3500 in prizes!')}</BannerDesc>}
         actions={<BannerActionContainer>{participateAction}</BannerActionContainer>}
       />

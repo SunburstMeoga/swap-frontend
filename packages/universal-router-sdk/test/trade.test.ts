@@ -44,7 +44,7 @@ const feeOptions = {
   fee: new Percent(TEST_FEE, 10000n),
 }
 
-describe('Ex.Zone Universal Router Trade', () => {
+describe('PGSWAP FINANCE Universal Router Trade', () => {
   const chainId = ChainId.ETHEREUM
   const liquidity = parseEther('1000')
 
@@ -1814,7 +1814,7 @@ describe('Ex.Zone Universal Router Trade', () => {
   })
 })
 
-describe('Ex.Zone StableSwap Through Universal Router, BSC Network Only', () => {
+describe('PGSWAP FINANCE StableSwap Through Universal Router, BSC Network Only', () => {
   const chainId = ChainId.BSC
   const liquidity = parseEther('1000')
 

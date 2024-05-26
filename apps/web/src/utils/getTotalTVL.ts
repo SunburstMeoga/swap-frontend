@@ -2,7 +2,7 @@ import { ChainId } from '@pancakeswap/chains'
 import addresses from 'config/constants/contracts'
 import { STABLESWAP_SUBGRAPHS_URLS, V2_SUBGRAPH_URLS, V3_SUBGRAPH_URLS } from 'config/constants/endpoints'
 import dayjs, { Dayjs } from 'dayjs'
-import { gql, GraphQLClient } from 'graphql-request'
+import { GraphQLClient, gql } from 'graphql-request'
 import { multiChainName } from 'state/info/constant'
 import { getCakeVaultAddress } from 'utils/addressHelpers'
 import { getCakeContract } from 'utils/contractHelpers'
@@ -49,7 +49,7 @@ export const getTotalTvl = async () => {
       query userCount($since: ISO8601DateTime, $till: ISO8601DateTime) {
         ethereum: ethereum(network: ethereum) {
           dexTrades(
-            exchangeName: { in: ["Pancake", "Pancake v2", "Ex.Zone"] }
+            exchangeName: { in: ["Pancake", "Pancake v2", "PGSWAP FINANCE"] }
             date: { since: $since, till: $till }
           ) {
             count(uniq: senders)
@@ -57,7 +57,7 @@ export const getTotalTvl = async () => {
         }
         bsc: ethereum(network: bsc) {
           dexTrades(
-            exchangeName: { in: ["Pancake", "Pancake v2", "Ex.Zone"] }
+            exchangeName: { in: ["Pancake", "Pancake v2", "PGSWAP FINANCE"] }
             date: { since: $since, till: $till }
           ) {
             count(uniq: senders)

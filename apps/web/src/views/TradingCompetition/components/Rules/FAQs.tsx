@@ -74,13 +74,13 @@ const FAQ = () => {
             <Text fontSize="14px" color="textSubtle">
               -{' '}
               {t(
-                'In the event of a disagreement concerning the final winning team or rank, Ex.Zone will have the final say.',
+                'In the event of a disagreement concerning the final winning team or rank, PGSWAP FINANCE will have the final say.',
               )}
             </Text>
             <Text fontSize="14px" color="textSubtle">
               -{' '}
               {t(
-                'Ex.Zone can and will disqualify any team or specific members that are proven to have taken malicious action or attempt to “cheat” in any way.',
+                'PGSWAP FINANCE can and will disqualify any team or specific members that are proven to have taken malicious action or attempt to “cheat” in any way.',
               )}
             </Text>
           </FoldableText>

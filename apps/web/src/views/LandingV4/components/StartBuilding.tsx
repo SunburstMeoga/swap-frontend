@@ -143,7 +143,7 @@ export const StartBuilding = () => {
               lineHeight={['32px', '36px', '36px', '40px']}
               fontSize={['28px', '36px', '36px', '40px']}
             >
-              {t('with Ex.Zone v4')}
+              {t('with PGSWAP FINANCE v4')}
             </Text>
           </HeaderTitle>
           <StepsContainer>

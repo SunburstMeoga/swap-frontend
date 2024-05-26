@@ -39,14 +39,14 @@ const Menu = (props) => {
   const [optionsConfirmed] = useUserNotUsCitizenAcknowledgement(IdType.OPTIONS)
 
   const [onPerpConfirmModalPresent] = useModal(
-    <USCitizenConfirmModal title={t('Ex.Zone Perpetuals')} id={IdType.PERPETUALS} href={perpUrl} />,
+    <USCitizenConfirmModal title={t('PGSWAP FINANCE Perpetuals')} id={IdType.PERPETUALS} href={perpUrl} />,
     true,
     false,
     'perpConfirmModal',
   )
   const [onOptionsConfirmModalPresent] = useModal(
     <USCitizenConfirmModal
-      title={t('Ex.Zone Options')}
+      title={t('PGSWAP FINANCE Options')}
       id={IdType.OPTIONS}
       href={getOptionsUrl()}
       desc={

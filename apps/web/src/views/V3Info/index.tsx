@@ -112,7 +112,7 @@ export default function Home() {
   return (
     <Page>
       <Heading scale="lg" mb="16px">
-        {t('Ex.Zone Info & Analytics')}
+        {t('PGSWAP FINANCE Info & Analytics')}
       </Heading>
       <ChartCardsContainer>
         <Card>

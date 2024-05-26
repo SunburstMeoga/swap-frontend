@@ -71,8 +71,8 @@ export const V4InfoBanner = () => {
         title={
           <BannerTitle variant="purple">
             {isMobile || isTablet
-              ? t('Introducing Ex.Zone v4')
-              : t('Your DEX Your Innovation Introducing Ex.Zone v4')}
+              ? t('Introducing PGSWAP FINANCE v4')
+              : t('Your DEX Your Innovation Introducing PGSWAP FINANCE v4')}
           </BannerTitle>
         }
         actions={

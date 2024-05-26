@@ -79,7 +79,7 @@ function useUSDVDisclaimer() {
       modalHeader={t('USDV Disclaimer')}
       id="usdv-disclaimer-modal"
       header={t('This is an experimental product')}
-      subtitle={t('Verified USD ($USDV), is a product offered by USDV.money and is not associated with Ex.Zone.')}
+      subtitle={t('Verified USD ($USDV), is a product offered by USDV.money and is not associated with PGSWAP FINANCE.')}
       checks={checks}
       onSuccess={onAccept}
     />,

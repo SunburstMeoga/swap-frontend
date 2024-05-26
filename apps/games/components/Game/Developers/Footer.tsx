@@ -139,7 +139,7 @@ export const Footer = () => {
 
       <Wrapper>
         <Text mb="24px" fontWeight={600} color="#FDEDEC" textAlign="center" fontSize={isMobile ? 32 : 40}>
-          {t('Build Games with Ex.Zone Now')}
+          {t('Build Games with PGSWAP FINANCE Now')}
         </Text>
         <Link external href="https://forms.gle/WXDhmbfRhQtz4eSt7">
           <Button mt="24px">{t('Start Building')}</Button>

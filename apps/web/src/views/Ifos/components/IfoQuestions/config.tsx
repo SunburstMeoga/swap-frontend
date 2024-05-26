@@ -34,7 +34,7 @@ const config = [
       </Box>,
       <Box mt="1rem">
         <Trans>
-          In the Public Sale, everyone with an active Ex.Zone profile can commit. However the maximum amount of CAKE
+          In the Public Sale, everyone with an active PGSWAP FINANCE profile can commit. However the maximum amount of CAKE
           users can commit, is equal to the number of iCAKE they have.
         </Trans>
       </Box>,
@@ -76,7 +76,7 @@ const config = [
       </Box>,
       <Box mt="1rem">
         <Trans>
-          Just remember: you need an active Ex.Zone Profile in order to participate in Private and Public Sales.
+          Just remember: you need an active PGSWAP FINANCE Profile in order to participate in Private and Public Sales.
         </Trans>
       </Box>,
     ],

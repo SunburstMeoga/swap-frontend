@@ -28,8 +28,8 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: How does this feature benefit Ex.Zone users and CAKE holders?
-      description: Explain how this feature will be beneficial for the Ex.Zone community and ecosystem.
+      label: How does this feature benefit PGSWAP FINANCE users and CAKE holders?
+      description: Explain how this feature will be beneficial for the PGSWAP FINANCE community and ecosystem.
     validations:
       required: true
   - type: textarea

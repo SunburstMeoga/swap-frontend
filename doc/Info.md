@@ -1,6 +1,6 @@
 # Documentation: Info
 
-A brief overview how Info part of Ex.Zone website works.
+A brief overview how Info part of PGSWAP FINANCE website works.
 
 ## Code structure
 

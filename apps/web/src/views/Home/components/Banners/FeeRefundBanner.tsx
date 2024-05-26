@@ -85,7 +85,7 @@ export const FeeRefundBanner = () => {
           <BannerTitle variant="purple">
             {isMobile || isTablet
               ? t('Up to $8M in interface fees paid refunded!')
-              : t('Get up to $8M USD in interface fees paid refunded on Ex.Zone')}
+              : t('Get up to $8M USD in interface fees paid refunded on PGSWAP FINANCE')}
           </BannerTitle>
         }
         actions={

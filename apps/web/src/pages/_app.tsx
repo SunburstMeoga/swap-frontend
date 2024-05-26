@@ -83,7 +83,7 @@ function MyApp(props: AppProps<{ initialReduxState: any; dehydratedState: any }>
         />
         <meta
           name="description"
-          content="Cheaper and faster than Uniswap? Discover Ex.Zone, the leading DEX on BNB Smart Chain (BSC) with the best farms in DeFi and a lottery for CAKE."
+          content="Cheaper and faster than Uniswap? Discover PGSWAP FINANCE, the leading DEX on BNB Smart Chain (BSC) with the best farms in DeFi and a lottery for CAKE."
         />
         <meta name="theme-color" content="#EC7063" />
         {(Component as NextPageWithLayout).mp && (

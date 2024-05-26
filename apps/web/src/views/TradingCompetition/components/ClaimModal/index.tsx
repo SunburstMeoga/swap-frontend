@@ -95,7 +95,7 @@ const ClaimModal: React.FC<React.PropsWithChildren<CompetitionProps>> = ({
             <ImageWrapper>
               <Image src={MoDAllBunnies} alt="achievement-claim-pcs" width={128} height={95} />
             </ImageWrapper>
-            <Text mt="8px">{t('Ex.Zone NFT')}</Text>
+            <Text mt="8px">{t('PGSWAP FINANCE NFT')}</Text>
             <Text color="textSubtle" mt="8px" fontSize="12px" textAlign="center">
               {t(
                 'Your Mines of Dalarnia - Bunny Helmet NFT will be airdropped to your wallet before 00:00 UTC on 2nd June.',

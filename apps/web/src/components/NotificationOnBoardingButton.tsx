@@ -30,7 +30,7 @@ const getOnBoardingButtonText = (
 
   if (isStep1) return t('Enable Notifications')
   if (isStep2) return t('Sign In With Wallet')
-  if (isStep3) return t('Subscribe To Ex.Zone')
+  if (isStep3) return t('Subscribe To PGSWAP FINANCE')
 
   return t('Enable Notifications')
 }

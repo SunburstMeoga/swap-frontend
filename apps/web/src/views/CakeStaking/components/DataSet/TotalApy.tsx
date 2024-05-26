@@ -141,7 +141,7 @@ export const TotalApy: React.FC<React.PropsWithChildren<TotalApyProps>> = ({ veC
           {t('Revenue Sharing APR')}
         </Text>
         <Text ml="4px" as="span">
-          {t('is generated from weekly revenue sharing from Ex.Zone V3.')}
+          {t('is generated from weekly revenue sharing from PGSWAP FINANCE V3.')}
         </Text>
       </Box>
       <Link mt="8px" external href="https://docs.pancakeswap.finance/products/vecake/faq#what-is-revenue-sharing-apr">

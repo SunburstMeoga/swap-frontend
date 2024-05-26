@@ -1,5 +1,5 @@
 {
-  "name": "Ex.Zone Default Aptos List",
+  "name": "PGSWAP FINANCE Default Aptos List",
   "timestamp": "2022-01-26T11:45:09Z",
   "version": {
     "major": 1,
@@ -212,7 +212,7 @@
       "logoURI": "https://tokens.pancakeswap.finance/images/symbol/usdc.png"
     },
     {
-      "name": "Ex.Zone Token",
+      "name": "PGSWAP FINANCE Token",
       "symbol": "CAKE",
       "chainId": 1,
       "decimals": 8,

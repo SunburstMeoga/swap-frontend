@@ -77,8 +77,8 @@ export const NemesisDownfallBanner = () => {
         title={
           <BannerTitle variant="orange">
             {isMobile || isTablet
-              ? t('Nemesis Downfall Now on Ex.Zone')
-              : t('Nemesis Downfall Now Live on Ex.Zone Gaming Marketplace')}
+              ? t('Nemesis Downfall Now on PGSWAP FINANCE')
+              : t('Nemesis Downfall Now Live on PGSWAP FINANCE Gaming Marketplace')}
           </BannerTitle>
         }
         actions={

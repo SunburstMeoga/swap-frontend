@@ -22,10 +22,10 @@ const HowItWork = () => {
         {t('are meant to be shared')}
       </Heading>
       <Text textAlign="center" color="textSubtle">
-        {t('Together we can make the Ex.Zone community even stronger')}
+        {t('Together we can make the PGSWAP FINANCE community even stronger')}
       </Text>
       <Text textAlign="center" color="textSubtle" bold mb="32px">
-        {t('How do you Become a Ex.Zone Affiliate?')}
+        {t('How do you Become a PGSWAP FINANCE Affiliate?')}
       </Text>
       <Flex width={['280px', '280px', '280px', '888px']} flexDirection={['column', 'column', 'column', 'row']}>
         <Flex width={['100%', '100%', '100%', '33.33%']} m={['0 0 16px 0', '0 0 16px 0', '0 0 16px 0', '0 16px 0 0']}>

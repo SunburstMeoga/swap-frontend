@@ -134,7 +134,7 @@ export const OpBnbBanner = memo(() => {
             <Divider />
             <OpBnbLogo width={33} height={33} />
           </Flex>
-          <Header>{isMobile ? t('opBNB is LIVE!') : t('Ex.Zone Now Live on opBNB!')}</Header>
+          <Header>{isMobile ? t('opBNB is LIVE!') : t('PGSWAP FINANCE Now Live on opBNB!')}</Header>
           {!isMobile && <SubTitle>{t('Swap and Provide Liquidity Now')}</SubTitle>}
           <Link
             style={{ textDecoration: 'none' }}

@@ -11,7 +11,7 @@ describe('getFarmPrices tests', () => {
           chainId: 56,
           address: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
           symbol: 'Cake',
-          name: 'Ex.Zone Token',
+          name: 'PGSWAP FINANCE Token',
           decimals: 18,
         },
         quoteToken: {

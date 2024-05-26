@@ -80,7 +80,7 @@ export const EthWbethFaq = () => [
           </Link>
         </NextLink>
         <Trans>
-          Ex.Zone is also working to support a conversion contract on our liquid staking page to convert wBETH back
+          PGSWAP FINANCE is also working to support a conversion contract on our liquid staking page to convert wBETH back
           to ETH seamlessly.
         </Trans>
       </>

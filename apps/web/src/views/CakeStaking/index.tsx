@@ -96,7 +96,7 @@ const CakeStaking = () => {
               <QuestionHelper
                 size="20px"
                 text={t(
-                  'Boost your Ex.Zone farming APR by up to 2.5x. Aquire more veCAKE to receive a higher boost.',
+                  'Boost your PGSWAP FINANCE farming APR by up to 2.5x. Aquire more veCAKE to receive a higher boost.',
                 )}
                 placement="top"
                 ml="4px"
@@ -124,7 +124,7 @@ const CakeStaking = () => {
               <QuestionHelper
                 size="20px"
                 text={t(
-                  'Use your veCAKE as your IFO Public Sales commit credits. Aquire more veCAKE to commit more in the next Ex.Zone IFOs.',
+                  'Use your veCAKE as your IFO Public Sales commit credits. Aquire more veCAKE to commit more in the next PGSWAP FINANCE IFOs.',
                 )}
                 placement="top"
                 ml="4px"

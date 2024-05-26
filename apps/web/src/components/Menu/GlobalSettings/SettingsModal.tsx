@@ -377,7 +377,7 @@ function RoutingSettings() {
           <PreTitle mb="24px">{t('Liquidity source')}</PreTitle>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>Ex.Zone V3</Text>
+              <Text>PGSWAP FINANCE V3</Text>
               <QuestionHelper
                 text={
                   <Flex>
@@ -401,7 +401,7 @@ function RoutingSettings() {
           </Flex>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>Ex.Zone V2</Text>
+              <Text>PGSWAP FINANCE V2</Text>
               <QuestionHelper
                 text={
                   <Flex flexDirection="column">
@@ -426,7 +426,7 @@ function RoutingSettings() {
           </Flex>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>Ex.Zone {t('StableSwap')}</Text>
+              <Text>PGSWAP FINANCE {t('StableSwap')}</Text>
               <QuestionHelper
                 text={
                   <Flex flexDirection="column">
@@ -453,7 +453,7 @@ function RoutingSettings() {
           </Flex>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>{`Ex.Zone ${t('MM Linked Pool')}`}</Text>
+              <Text>{`PGSWAP FINANCE ${t('MM Linked Pool')}`}</Text>
               <QuestionHelper
                 text={
                   <Flex flexDirection="column">

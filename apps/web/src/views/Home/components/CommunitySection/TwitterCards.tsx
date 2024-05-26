@@ -72,7 +72,7 @@ export const useTweetsData = () => {
   return useMemo(() => {
     return [
       {
-        tweet: `📢Say hello to Ex.Zone v4
+        tweet: `📢Say hello to PGSWAP FINANCE v4
 🪝Hooks
 🔗Custom Pool Types & Donate
 ⛽️Gas Optimization via Singleton & Flash Accounting
@@ -80,7 +80,7 @@ export const useTweetsData = () => {
 ➡️Coming to Ethereum and BNB Chain in Q3
 📚Read more: https://bit.ly/48QgtgN
 `,
-        link: 'https://x.com/Ex.Zone/status/1768623187959672871?s=20',
+        link: 'https://x.com/PGSWAP FINANCE/status/1768623187959672871?s=20',
         date: 'Mar 15',
         like: '0.5k',
         impression: '54k',
@@ -123,13 +123,13 @@ export const TwitterCards: React.FC = () => {
       </LogoBox>
       <Flex alignItems="center">
         <Text mt="10px" fontSize={14} bold>
-          Ex.Zone🥞Ev3ryone&#39;s Favourite D3X
+          PGSWAP FINANCE🥞Ev3ryone&#39;s Favourite D3X
         </Text>
         <VerifiedIcon ml="3px" mt="9px" color={theme.colors.secondary} />
       </Flex>
       <Flex style={{ gap: 0 }} alignItems="center" justifyContent="center">
         <StyledText fontSize={14} color={theme.colors.textSubtle}>
-          @Ex.Zone
+          @PGSWAP FINANCE
         </StyledText>
         <Divider />
         <Text fontSize={14} color={theme.colors.textSubtle}>

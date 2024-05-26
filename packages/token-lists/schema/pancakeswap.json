@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "pancakeswap",
-  "title": "Ex.Zone Token List",
-  "description": "Schema for lists of tokens compatible with the Ex.Zone Interface, including Uniswap standard and Ex.Zone Aptos",
+  "title": "PGSWAP FINANCE Token List",
+  "description": "Schema for lists of tokens compatible with the PGSWAP FINANCE Interface, including Uniswap standard and PGSWAP FINANCE Aptos",
   "definitions": {
     "Version": {
       "type": "object",
