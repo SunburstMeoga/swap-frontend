@@ -92,7 +92,6 @@
   "Trade": "交易",
   "Farms": "农场",
   "Pools": "糖浆池",
-  "PGChain Dual Currency Pledge": "PGChain 双币质押",
   "NFT": "NFT",
   "Fixed-staking Ends": "固定质押到期时间",
   "Restake period ends on": "重新质押期到期时间：",
@@ -3355,5 +3354,6 @@
   "Exact number: %numberWithFullDigits%": "Exact number: %numberWithFullDigits%",
   "Please note that the Pearls earned from this vault will only appear in your balance at a later time.": "请注意，从此资金库中获得的珍珠只会稍后出现在您的余额中。",
   "Fee saved": "Fee saved",
-  "Fees saved on PGSWAP FINANCE compared to major DEXs charging interface fees": "Fees saved on PGSWAP FINANCE compared to major DEXs charging interface fees"
+  "Fees saved on PGSWAP FINANCE compared to major DEXs charging interface fees": "Fees saved on PGSWAP FINANCE compared to major DEXs charging interface fees",
+  "PGChain Dual Currency Pledge": "PGChain 双币质押"
 }
