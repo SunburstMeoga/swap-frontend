@@ -63,24 +63,32 @@ export const VeCakeFourYearCard = () => {
       <Card p="0px" style={{ zIndex: 1 }}>
         <StyledCardBody style={{ padding: '8px 24px 2px 24px' }}>
           <Text fontSize={14} bold color="secondary">
-            {t('CAKE Staking')}
+            {/* {t('CAKE Staking')} */}
+            PGChain 双币质押计划
           </Text>
           <Text fontSize={20} bold color="text">
-            {t('Up to %apr%% APR', { apr: totalApr.toFixed(2) })}
+            {/* {t('Up to %apr%% APR', { apr: totalApr.toFixed(2) })} */}
+            年化收益率高达 26.34%
           </Text>
         </StyledCardBody>
         <StyledCardFooter>
           <Text color="textSubtle" fontSize={12}>
-            {t('Stake CAKE to get veCAKE, earn up to %apr%% APR from veCAKE pool and revenue sharing.', {
+            {/* {t('Stake CAKE to get veCAKE, earn up to %apr%% APR from veCAKE pool and revenue sharing.', {
               apr: totalApr.toFixed(2),
-            })}
+            })} */}
+            PGChain为庆祝与Hash Ahead的合作，特别为用户申请了一定份额的 HAH，只需在进行双币质押时，支付一定数量的 USD3 即可购买HAH，并与PGC共同进行双币质押，质押完成后即可获得HAH（数量有限，先到先得）
           </Text>
           <Text color="textSubtle" fontSize={12} mt="8px">
-            {t('Unlock other benefits like voting incentives, yield boosting, IFO, and so much more...')}
+            请注意：质押完成后，USD3 将不会退还，您会得到质押时购买的HAH 和质押的 PGC。此外，您还会获得以 PGC 结算的质押奖励。
+          </Text>
+          <Text color="textSubtle" fontSize={12} mt="8px">
+            此外，{t('Unlock other benefits like voting incentives, yield boosting, IFO, and so much more...')}
+            {/* 请注意：质押完成后，USD3 将不会退还，您会得到质押时购买的HAH 和质押的 PGC。此外，您还会获得以 PGC 结算的质押奖励。 */}
           </Text>
           <NextLink href="/cake-staking" passHref>
             <Button mt="16px" width="100%" variant="subtle">
-              {t('Go to veCAKE staking')}
+              {/* {t('Go to veCAKE staking')} */}
+              前往质押
             </Button>
           </NextLink>
         </StyledCardFooter>

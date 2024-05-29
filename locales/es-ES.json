@@ -91,8 +91,7 @@
   "Home": "Inicio",
   "Trade": "Negociación",
   "Farms": "Granjas",
-  "Pools": "PGChain Dual Currency Pledge",
-  "PGChain Dual Currency Pledge": "PGChain Dual Currency Pledge",
+  "Pools": "Pools",
   "NFT": "NFT",
   "Fixed-staking Ends": "Inversiones fijas terminan en",
   "Restake period ends on": "El plazo de reinversión finaliza el",
@@ -381,7 +380,7 @@
   "Auto": "Automático",
   "Manual": "Manual",
   "Earn CAKE, stake CAKE": "Gana CAKE, invierte en CAKE",
-  "Syrup Pools": "PGChain Dual Currency Pledge",
+  "Syrup Pools": "Syrup Pools",
   "Best round: #%roundId%": "Mejor ronda: #%roundId%",
   "View Reclaimed & Won": "Ver los cobros y las ganancias",
   "This round was automatically cancelled due to an error. If you entered a position, please reclaim your funds below.": "Esta ronda se canceló automáticamente debido a que se produjo un error. Si ingresaste una posición, recupera tus fondos a continuación.",
@@ -3355,5 +3354,6 @@
   "Exact number: %numberWithFullDigits%": "Exact number: %numberWithFullDigits%",
   "Please note that the Pearls earned from this vault will only appear in your balance at a later time.": "Ten en cuenta que las Pearls obtenidas de esta bóveda sólo aparecerán en tu saldo más adelante.",
   "Fee saved": "Fee saved",
-  "Fees saved on PGSWAP FINANCE compared to major DEXs charging interface fees": "Fees saved on PGSWAP FINANCE compared to major DEXs charging interface fees"
+  "Fees saved on PGSWAP FINANCE compared to major DEXs charging interface fees": "Fees saved on PGSWAP FINANCE compared to major DEXs charging interface fees",
+  "PGChain Dual Currency Pledge": "PGChain 双币质押"
 }

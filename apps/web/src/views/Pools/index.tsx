@@ -55,14 +55,16 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
         <Flex justifyContent="space-between" flexDirection={['column', null, null, 'row']}>
           <Flex flex="1" flexDirection="column" mr={['8px', 0]}>
             <Heading as="h1" scale="xxl" color="secondary" mb="24px">
-              {t('Syrup Pools')}
               {/* {t('PGChain Dual Currency Pledge')} */}
+              PGChain双币质押
             </Heading>
             <Heading scale="md" color="text">
-              {t('Just stake some tokens to earn.')}
+              {/* {t('Just stake some tokens to earn.')} */}
+              通过质押代币，轻松赚取收益。
             </Heading>
             <Heading scale="md" color="text">
-              {t('High APR, low risk.')}
+              {/* {t('High APR, low risk.')} */}
+              低风险，高年化收益率，您的最佳选择。
             </Heading>
           </Flex>
           <VeCakeFourYearCard />

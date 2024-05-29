@@ -380,7 +380,7 @@
   "Auto": "Auto",
   "Manual": "Manual",
   "Earn CAKE, stake CAKE": "Earn CAKE, stake CAKE",
-  "Syrup Pools": "PGChain Dual Currency Pledge",
+  "Syrup Pools": "Syrup Pools",
   "Best round: #%roundId%": "Best round: #%roundId%",
   "View Reclaimed & Won": "View Reclaimed & Won",
   "This round was automatically cancelled due to an error. If you entered a position, please reclaim your funds below.": "This round was automatically cancelled due to an error. If you entered a position, please reclaim your funds below.",
@@ -3354,5 +3354,6 @@
   "Exact number: %numberWithFullDigits%": "Exact number: %numberWithFullDigits%",
   "Please note that the Pearls earned from this vault will only appear in your balance at a later time.": "Please note that the Pearls earned from this vault will only appear in your balance at a later time.",
   "Fee saved": "Fee saved",
-  "Fees saved on PGSWAP FINANCE compared to major DEXs charging interface fees": "Fees saved on PGSWAP FINANCE compared to major DEXs charging interface fees"
+  "Fees saved on PGSWAP FINANCE compared to major DEXs charging interface fees": "Fees saved on PGSWAP FINANCE compared to major DEXs charging interface fees",
+  "PGChain Dual Currency Pledge": "PGChain Dual Currency Pledge"
 }

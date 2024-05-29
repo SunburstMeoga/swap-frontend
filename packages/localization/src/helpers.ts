@@ -8,6 +8,7 @@ export const fetchLocale = async (locale: string) => {
   const response = await fetch(`${publicUrl}/${locale}.json`)
   if (response.ok) {
     const data = await response.json()
+    console.log(data)
     return data
   }
 
