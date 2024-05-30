@@ -12,14 +12,14 @@ import { checkIsIOS } from '../../hooks/useIsIOS'
 import { useObserverOnce } from '../../hooks/useObserver'
 
 import {
-    CakePartnerTag,
-    CakeSectionTag,
-    EcoSystemTagOuterWrapper,
-    FeatureTagsWrapper,
-    PartnerTagOuterWrapper,
-    PartnerTagsWrapper,
-    useEcosystemTagData,
-    usePartnerData,
+  CakePartnerTag,
+  CakeSectionTag,
+  EcoSystemTagOuterWrapper,
+  FeatureTagsWrapper,
+  PartnerTagOuterWrapper,
+  PartnerTagsWrapper,
+  useEcosystemTagData,
+  usePartnerData,
 } from './CakeSectionTag'
 
 const LINE_TRANSITION_TIMES = 0.35

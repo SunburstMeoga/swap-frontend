@@ -2,13 +2,11 @@ import { languageList, useTranslation } from '@pancakeswap/localization'
 import { Menu as UikitMenu, footerLinks } from '@pancakeswap/uikit'
 import { BIG_ZERO } from '@pancakeswap/utils/bigNumber'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
-import { NetworkSwitcher } from 'components/NetworkSwitcher'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import { useCakePrice } from 'hooks/useCakePrice'
 import useTheme from 'hooks/useTheme'
 import { useRouter } from 'next/router'
 import { useMemo } from 'react'
-import { GlobalSettings } from './GlobalSettings'
 import UserMenu from './UserMenu'
 import { useMenuItems } from './hooks/useMenuItems'
 import { getActiveMenuItem, getActiveSubMenuItem } from './utils'
@@ -42,8 +40,8 @@ const Menu = (props: any) => {
         linkComponent={LinkComponent}
         rightSide={
           <>
-            <GlobalSettings />
-            <NetworkSwitcher />
+            {/* <GlobalSettings />
+            <NetworkSwitcher /> */}
             <UserMenu />
           </>
         }

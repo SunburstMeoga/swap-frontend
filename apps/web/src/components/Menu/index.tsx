@@ -4,7 +4,6 @@ import { BIG_ZERO } from '@pancakeswap/utils/bigNumber'
 import { usePhishingBanner } from '@pancakeswap/utils/user'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 import USCitizenConfirmModal from 'components/Modal/USCitizenConfirmModal'
-import { NetworkSwitcher } from 'components/NetworkSwitcher'
 import PhishingWarningBanner from 'components/PhishingWarningBanner'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import { useCakePrice } from 'hooks/useCakePrice'
@@ -13,10 +12,8 @@ import useTheme from 'hooks/useTheme'
 import { IdType, useUserNotUsCitizenAcknowledgement } from 'hooks/useUserIsUsCitizenAcknowledgement'
 import { useWebNotifications } from 'hooks/useWebNotifications'
 import { useRouter } from 'next/router'
-import { Suspense, lazy, useCallback, useMemo } from 'react'
+import { lazy, useCallback, useMemo } from 'react'
 import { getOptionsUrl } from 'utils/getOptionsUrl'
-import GlobalSettings from './GlobalSettings'
-import { SettingsMode } from './GlobalSettings/types'
 import UserMenu from './UserMenu'
 import { UseMenuItemsParams, useMenuItems } from './hooks/useMenuItems'
 import { getActiveMenuItem, getActiveSubMenuItem } from './utils'
@@ -102,13 +99,13 @@ const Menu = (props) => {
         linkComponent={LinkComponent}
         rightSide={
           <>
-            <GlobalSettings mode={SettingsMode.GLOBAL} />
+            {/* <GlobalSettings mode={SettingsMode.GLOBAL} />
             {enabled && (
               <Suspense fallback={null}>
                 <Notifications />
               </Suspense>
             )}
-            <NetworkSwitcher />
+            <NetworkSwitcher /> */}
             <UserMenu />
           </>
         }
