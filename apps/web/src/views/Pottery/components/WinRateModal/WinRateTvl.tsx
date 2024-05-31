@@ -1,9 +1,9 @@
-import { styled } from 'styled-components'
-import Trans from 'components/Trans'
 import { useTranslation } from '@pancakeswap/localization'
-import { Text, Button, Flex, Box, Balance } from '@pancakeswap/uikit'
-import { WinRateCalculatorState } from 'views/Pottery/hooks/useWinRateCalculator'
+import { Balance, Box, Button, Flex, Text } from '@pancakeswap/uikit'
+import Trans from 'components/Trans'
 import { ReactNode } from 'react'
+import { styled } from 'styled-components'
+import { WinRateCalculatorState } from 'views/Pottery/hooks/useWinRateCalculator'
 
 const StyledBox = styled(Box)`
   background-color: ${({ theme }) => theme.colors.input};
@@ -73,7 +73,7 @@ const WinRateTvl: React.FC<React.PropsWithChildren<WinRateTvlProps>> = ({
           textAlign="right"
           decimals={2}
           value={totalLockValueAsUSD}
-          unit=" USD"
+          unit=" PGC"
         />
       </StyledBox>
     </>

@@ -1,23 +1,23 @@
-import { useTranslation, ContextApi } from '@pancakeswap/localization'
+import { ContextApi, useTranslation } from '@pancakeswap/localization'
 import {
   Box,
   Card,
   CardBody,
+  CardFooter,
   CardHeader,
+  ExpandableLabel,
   Flex,
   HelpIcon,
   Text,
   useTooltip,
-  ExpandableLabel,
-  CardFooter,
 } from '@pancakeswap/uikit'
 import { Ifo, PoolIds } from 'config/constants/types'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
+import useLedgerTimestamp from 'hooks/useLedgerTimestamp'
 import { useMemo, useState } from 'react'
 import { styled } from 'styled-components'
 import { getStatus } from 'views/Ifos/hooks/helpers'
 import { PublicIfoData, WalletIfoData } from 'views/Ifos/types'
-import useLedgerTimestamp from 'hooks/useLedgerTimestamp'
 import { CardConfigReturn } from '../types'
 import IfoCardActions from './IfoCardActions'
 import IfoCardDetails from './IfoCardDetails'

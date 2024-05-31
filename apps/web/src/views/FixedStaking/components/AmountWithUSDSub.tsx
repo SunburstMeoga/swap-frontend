@@ -26,7 +26,7 @@ export function AmountWithUSDSub({
         {amount.toSignificant(6)} {amount.currency.symbol}
       </Text>
       <Balance
-        unit=" USD"
+        unit=" PGC"
         color="textSubtle"
         prefix="~$"
         fontSize="12px"

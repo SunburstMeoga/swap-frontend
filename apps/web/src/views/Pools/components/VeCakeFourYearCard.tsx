@@ -81,10 +81,9 @@ export const VeCakeFourYearCard = () => {
           <Text color="textSubtle" fontSize={12} mt="8px">
             请注意：质押完成后，USD3 将不会退还，您会得到质押时购买的HAH 和质押的 PGC。此外，您还会获得以 PGC 结算的质押奖励。
           </Text>
-          <Text color="textSubtle" fontSize={12} mt="8px">
+          {/* <Text color="textSubtle" fontSize={12} mt="8px">
             此外，{t('Unlock other benefits like voting incentives, yield boosting, IFO, and so much more...')}
-            {/* 请注意：质押完成后，USD3 将不会退还，您会得到质押时购买的HAH 和质押的 PGC。此外，您还会获得以 PGC 结算的质押奖励。 */}
-          </Text>
+          </Text> */}
           <NextLink href="/cake-staking" passHref>
             <Button mt="16px" width="100%" variant="subtle">
               {/* {t('Go to veCAKE staking')} */}

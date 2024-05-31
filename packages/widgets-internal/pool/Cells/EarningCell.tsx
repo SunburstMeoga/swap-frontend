@@ -70,7 +70,7 @@ export function EarningsCell<T>({ pool, account, aptosRewardTooltips }: Earnings
                         decimals={2}
                         prefix="~"
                         value={earningTokenDollarBalance}
-                        unit=" USD"
+                        unit=" PGC"
                       />
                     </>
                   ) : (

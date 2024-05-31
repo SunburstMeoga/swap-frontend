@@ -5,13 +5,13 @@ import { useTranslation } from '@pancakeswap/localization'
 import { Token } from '@pancakeswap/sdk'
 import BigNumber from 'bignumber.js'
 
-interface TotalStakedCellProps {
+interface RemainingStakedCellProps {
   totalStakedBalance: number
   stakingToken: Token
   totalStaked?: BigNumber
 }
 
-const TotalStakedCell: React.FC<React.PropsWithChildren<TotalStakedCellProps>> = ({
+const RemainingStakedCell: React.FC<React.PropsWithChildren<RemainingStakedCellProps>> = ({
   stakingToken,
   totalStaked,
   totalStakedBalance,
@@ -22,7 +22,7 @@ const TotalStakedCell: React.FC<React.PropsWithChildren<TotalStakedCellProps>> =
     <Pool.BaseCell role="cell" flex={['1 0 50px', '1 0 50px', '2 0 100px', '2 0 100px', '1 0 120px']}>
       <Pool.CellContent>
         <Text fontSize="12px" color="textSubtle" textAlign="left">
-          {t('Total staked')}
+          质押剩余量
         </Text>
         {totalStaked && totalStaked.gte(0) ? (
           <Flex height="20px" alignItems="center">
@@ -36,4 +36,4 @@ const TotalStakedCell: React.FC<React.PropsWithChildren<TotalStakedCellProps>> =
   )
 }
 
-export default TotalStakedCell
+export default RemainingStakedCell

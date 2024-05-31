@@ -26,7 +26,7 @@ import {
 import { bscTokens } from '@pancakeswap/tokens'
 import useSelectedPeriod from '../hooks/useSelectedPeriod'
 import { PoolGroup, StakedPosition } from '../type'
-import { AmountWithUSDSub } from './AmountWithUSDSub'
+import { AmountWithUSDSub } from './AmountWithUSDSub.1'
 import AprCell from './AprCell'
 import { AprFooter } from './AprFooter'
 import { FixedStakingModal } from './FixedStakingModal'

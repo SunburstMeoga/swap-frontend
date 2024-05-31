@@ -14,8 +14,8 @@ export const vaultPoolConfig = {
     },
   },
   [VaultKey.CakeVault]: {
-    name: <Trans>Stake CAKE</Trans>,
-    description: <Trans>This product has been upgraded</Trans>,
+    name: <Trans>PGChain双币质押</Trans>,
+    description: <Trans>此产品已升级至更高收益</Trans>,
     autoCompoundFrequency: 5000,
     gasLimit: 1100000n,
     tokenImage: {

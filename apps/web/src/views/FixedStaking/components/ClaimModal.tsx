@@ -11,7 +11,7 @@ import { useHandleWithdrawSubmission } from '../hooks/useHandleWithdrawSubmissio
 import useIsBoost from '../hooks/useIsBoost'
 import { useCurrentDay } from '../hooks/useStakedPools'
 import { PoolGroup, StakePositionUserInfo, StakedPosition } from '../type'
-import { AmountWithUSDSub } from './AmountWithUSDSub'
+import { AmountWithUSDSub } from './AmountWithUSDSub.1'
 import { HarvestModal } from './HarvestModal'
 import { ModalTitle } from './ModalTitle'
 import { StakedLimitEndOn } from './StakedLimitEndOn'

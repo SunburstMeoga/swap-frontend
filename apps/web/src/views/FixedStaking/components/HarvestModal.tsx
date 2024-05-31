@@ -8,7 +8,7 @@ import useAccountActiveChain from 'hooks/useAccountActiveChain'
 import { ReactNode, useState } from 'react'
 
 import { FixedStakingPool, UnstakeType } from '../type'
-import { AmountWithUSDSub } from './AmountWithUSDSub'
+import { AmountWithUSDSub } from './AmountWithUSDSub.1'
 import { DisclaimerCheckBox } from './DisclaimerCheckBox'
 import { FixedStakingCalculator } from './FixedStakingCalculator'
 import { ModalTitle } from './ModalTitle'

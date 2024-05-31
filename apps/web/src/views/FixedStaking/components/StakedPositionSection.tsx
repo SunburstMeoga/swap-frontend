@@ -11,7 +11,7 @@ import { useCalculateProjectedReturnAmount } from '../hooks/useCalculateProjecte
 import { useFixedStakeAPR } from '../hooks/useFixedStakeAPR'
 import { useCurrentDay } from '../hooks/useStakedPools'
 import { PoolGroup, StakePositionUserInfo, StakedPosition } from '../type'
-import { AmountWithUSDSub } from './AmountWithUSDSub'
+import { AmountWithUSDSub } from './AmountWithUSDSub.1'
 import { ClaimModal } from './ClaimModal'
 import { LockedFixedTag } from './LockedFixedTag'
 import { FixedRestakingModal } from './RestakeFixedStakingModal'

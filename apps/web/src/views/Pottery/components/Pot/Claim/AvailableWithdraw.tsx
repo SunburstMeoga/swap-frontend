@@ -1,14 +1,14 @@
-import { useMemo } from 'react'
 import { useTranslation } from '@pancakeswap/localization'
-import { Flex, Box, Text, Balance } from '@pancakeswap/uikit'
-import { useCakePrice } from 'hooks/useCakePrice'
-import BigNumber from 'bignumber.js'
+import { Balance, Box, Flex, Text } from '@pancakeswap/uikit'
 import { getBalanceNumber } from '@pancakeswap/utils/formatBalance'
+import BigNumber from 'bignumber.js'
+import dayjs from 'dayjs'
+import { useCakePrice } from 'hooks/useCakePrice'
+import { useMemo } from 'react'
 import { PotteryWithdrawAbleData } from 'state/types'
+import { getDrawnDate } from 'views/Lottery/helpers'
 import WithdrawButton from 'views/Pottery/components/Pot/Claim/WithdrawButton'
 import { calculateCakeAmount } from 'views/Pottery/helpers'
-import { getDrawnDate } from 'views/Lottery/helpers'
-import dayjs from 'dayjs'
 
 interface AvailableWithdrawProps {
   withdrawData: PotteryWithdrawAbleData
@@ -50,7 +50,7 @@ const AvailableWithdraw: React.FC<React.PropsWithChildren<AvailableWithdrawProps
       <Flex mb="11px">
         <Box>
           <Balance fontSize="20px" lineHeight="110%" value={amount} decimals={2} bold />
-          <Balance fontSize="12px" lineHeight="110%" color="textSubtle" value={amountInBusd} decimals={2} unit=" USD" />
+          <Balance fontSize="12px" lineHeight="110%" color="textSubtle" value={amountInBusd} decimals={2} unit=" PGC" />
           {lockedDate && (
             <>
               <Text fontSize="10px" lineHeight="110%" color="textSubtle">

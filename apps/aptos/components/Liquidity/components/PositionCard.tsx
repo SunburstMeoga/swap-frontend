@@ -1,25 +1,25 @@
-import { memo, useState } from 'react'
-import { Percent } from '@pancakeswap/swap-sdk-core'
-import { styled } from 'styled-components'
+import { Currency, CurrencyAmount, Pair } from '@pancakeswap/aptos-swap-sdk'
 import { useTranslation } from '@pancakeswap/localization'
-import { Pair, Currency, CurrencyAmount } from '@pancakeswap/aptos-swap-sdk'
+import { Percent } from '@pancakeswap/swap-sdk-core'
 import { CurrencyLogo, DoubleCurrencyLogo } from 'components/Logo'
+import { memo, useState } from 'react'
+import { styled } from 'styled-components'
 
 import {
-  Text,
-  ChevronUpIcon,
-  ChevronDownIcon,
+  AddIcon,
+  AutoColumn,
+  Button,
   Card,
   CardBody,
-  Flex,
   CardProps,
-  TooltipText,
+  ChevronDownIcon,
+  ChevronUpIcon,
   Dots,
+  Flex,
   RowBetween,
-  AutoColumn,
   RowFixed,
-  Button,
-  AddIcon,
+  Text,
+  TooltipText,
   useTooltip,
 } from '@pancakeswap/uikit'
 
@@ -100,7 +100,7 @@ function MinimalPositionCardView({
                       <Text small color="textSubtle">{`(~${totalUSDValue.toLocaleString(undefined, {
                         minimumFractionDigits: 2,
                         maximumFractionDigits: 2,
-                      })} USD)`}</Text>
+                      })} PGC)`}</Text>
                     )}
                   </Flex>
                 </RowFixed>

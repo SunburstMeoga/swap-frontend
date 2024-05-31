@@ -19,7 +19,8 @@ import AprRow from './components/PoolCard/AprRow'
 import CardActions from './components/PoolCard/CardActions'
 import CardFooter from './components/PoolCard/CardFooter'
 import PoolControls from './components/PoolControls'
-import PoolRow, { VaultPoolRow } from './components/PoolsTable/PoolRow'
+import NameCell from './components/PoolsTable/Cells/NameCell'
+import PoolRow from './components/PoolsTable/PoolRow'
 import { VeCakeFourYearCard } from './components/VeCakeFourYearCard'
 
 const CardLayout = styled(FlexLayout)`
@@ -133,12 +134,24 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
                 <Pool.PoolsTable>
                   {chosenPools.map((pool) =>
                     pool.vaultKey ? (
-                      <VaultPoolRow
-                        initialActivity={normalizedUrlSearch.toLowerCase() === pool.earningToken.symbol?.toLowerCase()}
-                        key={pool.vaultKey}
-                        vaultKey={pool.vaultKey}
-                        account={account ?? ''}
-                      />
+                      <div style={{ 'display': 'flex', 'alignItems': 'center', 'justifyContent': 'space-between' }}>
+                        <NameCell pool={pool} />
+                        <div style={{ width: '60%', paddingRight: '20px' }}>
+                          <div style={{ color: '#DA251D' }}>投票规则</div>
+                          <div style={{ color: '#F5B7B1', fontSize: '12px', fontWeight: 200 }}>投票方法:用户可以通过质押PGC为候选人投票。1PGC代表1票，每票只能投票给一名候选人。每次投票数最少100PGC。
+
+                            每轮投票时长:节点排名根据用户投票数更新，每30分钟发放一次奖励。
+
+                            提取规则:用户可以随时赎回PGC并退出节点投票，赎回的PGC将在彻票后锁仓2天，2天后需按提取按钮取回赎回的PGC。而提取收益的PGC可以随时提取并无锁仓期。</div>
+
+                        </div>
+                      </div>
+                      // <VaultPoolRow
+                      //   initialActivity={normalizedUrlSearch.toLowerCase() === pool.earningToken.symbol?.toLowerCase()}
+                      //   key={pool.vaultKey}
+                      //   vaultKey={pool.vaultKey}
+                      //   account={account ?? ''}
+                      // />
                     ) : (
                       <PoolRow
                         initialActivity={normalizedUrlSearch.toLowerCase() === pool.earningToken.symbol?.toLowerCase()}

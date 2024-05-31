@@ -2,7 +2,6 @@ import { useTranslation } from '@pancakeswap/localization'
 import { Box, Flex, Text } from '@pancakeswap/uikit'
 import { memo } from 'react'
 import { CakeStakingPageLink, LearnMoreLink } from './LearnMoreLink'
-import { VeCakeButton } from './VeCakeButton'
 import { ShineStyledBox } from './VeCakeCard'
 
 export const VeCakeUpdateCard: React.FC<{
@@ -23,19 +22,20 @@ export const VeCakeUpdateCard: React.FC<{
           <Text color="white" bold fontSize={14} pr="20px">
             {isFlexibleStake ? (
               <>
-                {t('This product has been upgraded to')}
+                {/* {t('This product has been upgraded to')} */}
+                {/* 此产品已升级至更高收益 */}
                 <CakeStakingPageLink />
               </>
             ) : (
               <>
-                {t('This product have been upgraded. Check out the brand new veCAKE for more CAKE staking benefits.')}
-                <LearnMoreLink />
+                {/* {t('This product have been upgraded. Check out the brand new veCAKE for more CAKE staking benefits.')}
+                <LearnMoreLink /> */}
               </>
             )}
           </Text>
         </Box>
       </Flex>
-      {!isFlexibleStake && <VeCakeButton type={isLockEndOrAfterLock ? 'check' : 'get'} />}
+      {/* {!isFlexibleStake && <VeCakeButton type={isLockEndOrAfterLock ? 'check' : 'get'} />} */}
     </ShineStyledBox>
   )
 })

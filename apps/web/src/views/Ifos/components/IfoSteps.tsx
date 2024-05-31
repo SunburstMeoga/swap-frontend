@@ -157,7 +157,7 @@ const Step1 = ({
                   color="textSubtle"
                   decimals={2}
                   prefix="~"
-                  unit=" USD"
+                  unit=" PGC"
                 />
               ) : (
                 <Skeleton mt="1px" height={16} width={64} />

@@ -1,15 +1,15 @@
-import { Box, ButtonMenu, ButtonMenuItem, Flex, LockIcon, Text, UnlockIcon } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
+import { Box, ButtonMenu, ButtonMenuItem, Flex, LockIcon, Text, UnlockIcon } from '@pancakeswap/uikit'
 
-import { ReactNode } from 'react'
 import { CurrencyAmount } from '@pancakeswap/swap-sdk-core'
+import { ReactNode } from 'react'
 
-import { PoolGroup, StakedPosition } from '../type'
-import { FixedStakingCardFooter } from './FixedStakingCardFooter'
-import { AmountWithUSDSub } from './AmountWithUSDSub'
-import { AprFooter } from './AprFooter'
 import useSelectedPeriod from '../hooks/useSelectedPeriod'
+import { PoolGroup, StakedPosition } from '../type'
+import { AmountWithUSDSub } from './AmountWithUSDSub.1'
 import AprCell from './AprCell'
+import { AprFooter } from './AprFooter'
+import { FixedStakingCardFooter } from './FixedStakingCardFooter'
 
 function OverviewDataRow({ title, detail, alignItems = 'center' }) {
   return (

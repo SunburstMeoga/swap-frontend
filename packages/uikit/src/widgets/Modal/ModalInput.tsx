@@ -1,15 +1,15 @@
-import BigNumber from "bignumber.js";
-import { useMemo } from "react";
-import { styled } from "styled-components";
 import { useTranslation } from "@pancakeswap/localization";
 import { displayBalance } from "@pancakeswap/utils/displayBalance";
 import { trimTrailZero } from "@pancakeswap/utils/trimTrailZero";
-import { Flex } from "../../components/Box";
-import { Text } from "../../components/Text";
-import { Link } from "../../components/Link";
-import { Button } from "../../components/Button";
+import BigNumber from "bignumber.js";
+import { useMemo } from "react";
+import { styled } from "styled-components";
 import { Balance } from "../../components/Balance";
+import { Flex } from "../../components/Box";
+import { Button } from "../../components/Button";
 import { Input, InputProps } from "../../components/Input";
+import { Link } from "../../components/Link";
+import { Text } from "../../components/Text";
 
 interface ModalInputProps {
   max: string;
@@ -125,7 +125,7 @@ const ModalInput: React.FC<React.PropsWithChildren<ModalInputProps>> = ({
                 decimals={2}
                 prefix="~"
                 value={valueUSDPrice.toNumber()}
-                unit=" USD"
+                unit=" PGC"
               />
             </Flex>
           </Flex>

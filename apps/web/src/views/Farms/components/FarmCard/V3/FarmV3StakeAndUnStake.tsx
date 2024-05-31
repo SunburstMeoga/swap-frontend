@@ -2,16 +2,16 @@ import { PositionDetails } from '@pancakeswap/farms'
 import { useTranslation } from '@pancakeswap/localization'
 import { Token } from '@pancakeswap/swap-sdk-core'
 import {
-  AutoRow,
-  Balance,
-  Box,
-  Button,
-  ChevronRightIcon,
-  Link,
-  QuestionHelper,
-  RowBetween,
-  SyncAltIcon,
-  Text,
+    AutoRow,
+    Balance,
+    Box,
+    Button,
+    ChevronRightIcon,
+    Link,
+    QuestionHelper,
+    RowBetween,
+    SyncAltIcon,
+    Text,
 } from '@pancakeswap/uikit'
 import BigNumber from 'bignumber.js'
 import { RangeTag } from 'components/RangeTag'
@@ -19,11 +19,11 @@ import { Bound } from 'config/constants/types'
 import { useDerivedPositionInfo } from 'hooks/v3/useDerivedPositionInfo'
 import useIsTickAtLimit from 'hooks/v3/useIsTickAtLimit'
 import { formatTickPrice } from 'hooks/v3/utils/formatTickPrice'
+import NextLink from 'next/link'
 import { useMemo, useState } from 'react'
 import { styled } from 'styled-components'
 import { unwrappedToken } from 'utils/wrappedCurrency'
 import { V3Farm } from 'views/Farms/FarmsV3'
-import NextLink from 'next/link'
 import { FarmV3ApyButton } from './FarmV3ApyButton'
 
 const StyledLink = styled(Link)`
@@ -189,7 +189,7 @@ export function FarmV3LPPositionDetail({
           />
         </AutoRow>
       )}
-      <Balance fontSize="12px" color="textSubtle" decimals={2} value={estimatedUSD ?? 0} unit=" USD" prefix="~" />
+      <Balance fontSize="12px" color="textSubtle" decimals={2} value={estimatedUSD ?? 0} unit=" PGC" prefix="~" />
       <AutoRow columnGap="8px">
         <Balance
           fontSize="12px"

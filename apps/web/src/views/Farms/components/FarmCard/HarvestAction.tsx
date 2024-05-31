@@ -115,7 +115,7 @@ const HarvestAction: React.FC<React.PropsWithChildren<FarmCardActionsProps>> = (
           <Heading color={rawEarningsBalance.eq(0) ? 'textDisabled' : 'text'}>{displayBalance}</Heading>
         )}
         {earningsBusd > 0 && (
-          <Balance fontSize="12px" color="textSubtle" decimals={2} value={earningsBusd} unit=" USD" prefix="~" />
+          <Balance fontSize="12px" color="textSubtle" decimals={2} value={earningsBusd} unit=" PGC" prefix="~" />
         )}
       </Flex>
       <Button disabled={rawEarningsBalance.eq(0) || pendingTx} onClick={onClickHarvestButton}>

@@ -24,7 +24,8 @@ export const EarnedTokenInfo: React.FC<React.PropsWithChildren<EarnedTokenInfoPr
       <Flex>
         <TokenImage style={{ minWidth: '16px' }} width={16} height={16} token={token} />
         <Text ml="4px" bold textTransform="uppercase" color="secondary" fontSize="12px" pr="4px">
-          {token.symbol}
+          {/* {token.symbol} */}
+          PGC
         </Text>
         <Text bold textTransform="uppercase" color="textSubtle" fontSize="12px">
           {t('Earned')}
@@ -33,7 +34,7 @@ export const EarnedTokenInfo: React.FC<React.PropsWithChildren<EarnedTokenInfoPr
       <Flex flexDirection="column" alignItems="flex-start">
         <Heading color={earningsBalance.eq(0) ? 'textDisabled' : 'text'}>{displayBalance}</Heading>
         {earningsBusd > 0 && (
-          <Balance fontSize="12px" color="textSubtle" decimals={2} value={earningsBusd} unit=" USD" prefix="~" />
+          <Balance fontSize="12px" color="textSubtle" decimals={2} value={earningsBusd} unit=" PGC" prefix="~" />
         )}
       </Flex>
     </Flex>

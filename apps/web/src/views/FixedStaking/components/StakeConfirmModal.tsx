@@ -1,11 +1,11 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { PreTitle, Flex, Box, Text } from '@pancakeswap/uikit'
-import { GreyCard } from 'components/Card'
 import { CurrencyAmount, Percent } from '@pancakeswap/sdk'
 import { Currency } from '@pancakeswap/swap-sdk-core'
+import { Box, Flex, PreTitle, Text } from '@pancakeswap/uikit'
+import { GreyCard } from 'components/Card'
 
+import { AmountWithUSDSub } from './AmountWithUSDSub.1'
 import FixedStakingOverview from './FixedStakingOverview'
-import { AmountWithUSDSub } from './AmountWithUSDSub'
 import { StakedLimitEndOn } from './StakedLimitEndOn'
 
 export function StakeConfirmModal({

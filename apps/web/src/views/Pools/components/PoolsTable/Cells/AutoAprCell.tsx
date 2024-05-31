@@ -3,13 +3,12 @@ import {
   Button,
   CalculateIcon,
   Flex,
-  FlexGap,
   Skeleton,
   Text,
   TooltipText,
   useMatchBreakpoints,
   useModal,
-  useTooltip,
+  useTooltip
 } from '@pancakeswap/uikit'
 import { Pool } from '@pancakeswap/widgets-internal'
 
@@ -66,7 +65,7 @@ const AutoAprCell: React.FC<React.PropsWithChildren<AprCellProps>> = ({ pool }) 
   if (pool.vaultKey === VaultKey.CakeVault && vaultPosition === VaultPosition.None) {
     return (
       <>
-        <Pool.BaseCell role="cell" flex={['1 0 50px', '1 0 50px', '2 0 100px', '2 0 100px', '1 0 120px']}>
+        {/* <Pool.BaseCell role="cell" flex={['1 0 50px', '1 0 50px', '2 0 100px', '2 0 100px', '1 0 120px']}>
           <Pool.CellContent>
             <Text fontSize="12px" color="textSubtle" textAlign="left">
               {t('Flexible APY')}
@@ -140,7 +139,7 @@ const AutoAprCell: React.FC<React.PropsWithChildren<AprCellProps>> = ({ pool }) 
               <Skeleton width="80px" height="16px" />
             )}
           </Pool.CellContent>
-        </Pool.BaseCell>
+        </Pool.BaseCell> */}
       </>
     )
   }

@@ -1,13 +1,13 @@
-import { styled } from 'styled-components'
-import { Skeleton, Text, Flex, Box, useModal, useMatchBreakpoints, Balance } from '@pancakeswap/uikit'
+import { Balance, Box, Flex, Skeleton, Text, useMatchBreakpoints, useModal } from '@pancakeswap/uikit'
 import { Pool } from '@pancakeswap/widgets-internal'
+import { styled } from 'styled-components'
 
-import BigNumber from 'bignumber.js'
-import { PoolCategory } from 'config/constants/types'
-import { BIG_ZERO } from '@pancakeswap/utils/bigNumber'
-import { formatNumber, getBalanceNumber, getFullDisplayBalance } from '@pancakeswap/utils/formatBalance'
 import { useTranslation } from '@pancakeswap/localization'
 import { Token } from '@pancakeswap/sdk'
+import { BIG_ZERO } from '@pancakeswap/utils/bigNumber'
+import { formatNumber, getBalanceNumber, getFullDisplayBalance } from '@pancakeswap/utils/formatBalance'
+import BigNumber from 'bignumber.js'
+import { PoolCategory } from 'config/constants/types'
 import CollectModal from '../../Modals/CollectModal'
 
 interface EarningsCellProps {
@@ -38,7 +38,9 @@ const EarningsCell: React.FC<React.PropsWithChildren<EarningsCellProps>> = ({ po
   const formattedBalance = formatNumber(earningTokenBalance, 3, 3)
   const isBnbPool = poolCategory === PoolCategory.BINANCE
 
-  const labelText = t('%asset% Earned', { asset: earningToken.symbol })
+  // const labelText = t('%asset% Earned', { asset: earningToken.symbol })
+  const labelText = t('%asset% Earned', { asset: 'PGC' })
+
 
   const [onPresentCollect] = useModal(
     <CollectModal
@@ -84,13 +86,13 @@ const EarningsCell: React.FC<React.PropsWithChildren<EarningsCellProps>> = ({ po
                         decimals={2}
                         prefix="~"
                         value={earningTokenDollarBalance}
-                        unit=" USD"
+                        unit=" PGC"
                       />
                     )}
                   </>
                 ) : (
                   <Text mt="4px" fontSize="12px" color="textDisabled">
-                    0 USD
+                    0 PGC
                   </Text>
                 )}
               </Box>

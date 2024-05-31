@@ -44,7 +44,7 @@ const SharingPoolNameCell = () => {
         <Balance
           bold
           prefix="~ "
-          unit=" USD"
+          unit=" PGC"
           decimals={2}
           fontSize={12}
           fontWeight={400}

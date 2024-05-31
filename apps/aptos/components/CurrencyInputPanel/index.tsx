@@ -1,20 +1,20 @@
-import { useMemo } from 'react'
 import { Currency, CurrencyAmount, Percent } from '@pancakeswap/aptos-swap-sdk'
 import { useAccount, useAccountBalance } from '@pancakeswap/awgmi'
 import { useIsMounted } from '@pancakeswap/hooks'
-import { useCurrencyBalance } from 'hooks/Balances'
-import useStablePrice from 'hooks/useStablePrice'
-import { multiplyPriceByAmount } from 'utils/prices'
 import { useTranslation } from '@pancakeswap/localization'
 import { AtomBox, Button, ChevronDownIcon, CopyButton, Text, useModal } from '@pancakeswap/uikit'
 import { Swap as SwapUI } from '@pancakeswap/widgets-internal'
+import { useCurrencyBalance } from 'hooks/Balances'
+import useStablePrice from 'hooks/useStablePrice'
+import { useMemo } from 'react'
+import { multiplyPriceByAmount } from 'utils/prices'
 
 import { CoinRegisterButton } from 'components/CoinRegisterButton'
 import { CurrencyLogo } from 'components/Logo'
 import CurrencySearchModal from 'components/SearchModal/CurrencySearchModal'
-import { styled } from 'styled-components'
 import { BridgeButton } from 'components/Swap/BridgeButton'
 import useBridgeInfo from 'components/Swap/hooks/useBridgeInfo'
+import { styled } from 'styled-components'
 
 type Props = {
   id: string
@@ -165,7 +165,7 @@ export const CurrencyInputPanel = ({
               <AtomBox style={{ maxWidth: '200px' }}>
                 {Number.isFinite(amountInDollar) && amountInDollar > 0 ? (
                   <Text fontSize="12px" color="textSubtle">
-                    ~{amountInDollar.toFixed(2)} USD
+                    ~{amountInDollar.toFixed(2)} PGC
                   </Text>
                 ) : (
                   <AtomBox style={{ height: '18px' }} />

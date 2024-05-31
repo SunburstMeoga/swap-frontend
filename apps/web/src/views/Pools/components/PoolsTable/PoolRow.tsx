@@ -17,12 +17,11 @@ import { useIsUserDelegated } from 'views/CakeStaking/hooks/useIsUserDelegated'
 import { useChainId } from 'wagmi'
 import ActionPanel from './ActionPanel/ActionPanel'
 import AprCell from './Cells/AprCell'
-import AutoAprCell from './Cells/AutoAprCell'
-import AutoEarningsCell from './Cells/AutoEarningsCell'
 import EarningsCell from './Cells/EarningsCell'
 import NameCell from './Cells/NameCell'
-import StakedCell from './Cells/StakedCell'
+import RemainingStakedCell from './Cells/RemainingStakedCell'
 import TotalStakedCell from './Cells/TotalStakedCell'
+
 
 const MigrateCell = styled(Pool.BaseCell)`
   padding: 0;
@@ -67,9 +66,9 @@ export const VaultPoolRow: React.FC<
       ) : null}
       {account && !isUserDelegated && (
         <>
-          {isXLargerScreen && <AutoEarningsCell pool={pool} account={account} />}
-          {isXLargerScreen ? <StakedCell pool={pool} account={account} /> : null}
-          <AutoAprCell pool={pool} />
+          {/* {isXLargerScreen && <AutoEarningsCell pool={pool} account={account} />}
+          {isXLargerScreen ? <StakedCell pool={pool} account={account} /> : null} */}
+          {/* <AutoAprCell pool={pool} /> */}
           {isLargerScreen && (
             <TotalStakedCell
               stakingToken={stakingToken}
@@ -79,6 +78,7 @@ export const VaultPoolRow: React.FC<
           )}
         </>
       )}
+      
     </Pool.ExpandRow>
   )
 })
@@ -127,6 +127,13 @@ const PoolRow: React.FC<React.PropsWithChildren<{ sousId: number; account: strin
       <EarningsCell pool={pool} account={account} />
       {isLargerScreen && stakingToken && (
         <TotalStakedCell
+          stakingToken={stakingToken}
+          totalStaked={totalStaked}
+          totalStakedBalance={totalStakedBalance}
+        />
+      )}
+      {isLargerScreen && stakingToken && (
+        <RemainingStakedCell
           stakingToken={stakingToken}
           totalStaked={totalStaked}
           totalStakedBalance={totalStakedBalance}

@@ -40,13 +40,13 @@ export const EarnedUsdPrice: React.FC<React.PropsWithChildren<EarnedUsdPriceProp
   const { targetRef, tooltip, tooltipVisible } = useTooltip(
     <Box>
       <Box>
-        <Text bold as="span">{`${displayBalance} CAKE`}</Text>
-        <Text as="span" ml="4px">{`(~$${formatNumber(earningsBusd, 2, 2)} USD)`}</Text>
+        <Text bold as="span">{`${displayBalance} PGC`}</Text>
+        <Text as="span" ml="4px">{`(~$${formatNumber(earningsBusd, 2, 2)} PGC)`}</Text>
       </Box>
       {dual && (
         <Box>
           <Text bold as="span">{`${dualTokenDisplayBalance} ${dual?.token?.symbol}`}</Text>
-          <Text as="span" ml="4px">{`(~$${formatNumber(dualTokenUsdc, 2, 2)} USD)`}</Text>
+          <Text as="span" ml="4px">{`(~$${formatNumber(dualTokenUsdc, 2, 2)} PGC)`}</Text>
         </Box>
       )}
       {account && !isUserIpPass && (
@@ -75,7 +75,7 @@ export const EarnedUsdPrice: React.FC<React.PropsWithChildren<EarnedUsdPriceProp
       <TooltipText ref={targetRef}>
         <Flex flexDirection={isCardView ? 'row-reverse' : 'row'}>
           {account && !isUserIpPass && <WarningIcon m="0 4px" color="failure" width="20px" />}
-          <Balance prefix="~$" value={totalUsdPrice} decimals={2} unit=" USD" />
+          <Balance prefix="~$" value={totalUsdPrice} decimals={2} unit=" PGC" />
         </Flex>
       </TooltipText>
       {tooltipVisible && tooltip}

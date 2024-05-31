@@ -104,7 +104,7 @@ const LockedStaking: React.FC<React.PropsWithChildren<LockedStakingProps>> = ({ 
             color="textSubtle"
             decimals={2}
             prefix="~"
-            unit=" USD"
+            unit=" PGC"
           />
         </Box>
         <Box>

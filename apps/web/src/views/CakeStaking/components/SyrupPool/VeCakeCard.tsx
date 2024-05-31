@@ -113,21 +113,22 @@ export const VeCakeBenefitCard: React.FC<{ isTableView?: boolean }> = memo(({ is
   const { t } = useTranslation()
   const { isMobile } = useMatchBreakpoints()
   return (
-    <ShineStyledBox
-      p="10px"
-      style={{
-        alignItems: 'center',
-        gap: 10,
-        height: isTableView ? '56px' : undefined,
-        display: isTableView ? 'inline-flex' : 'flex',
-        width: isTableView ? 'fit-content' : '100%',
-      }}
-    >
-      <img src="/images/cake-staking/token-vecake.png" alt="token-vecake" width="38px" />
-      <Text color="white" bold fontSize={isMobile && isTableView ? 11 : 14}>
-        {t('Stake & Lock for veCAKE, to enjoy more rewards & benefit!')}
-      </Text>
-    </ShineStyledBox>
+    // <ShineStyledBox
+    //   p="10px"
+    //   style={{
+    //     alignItems: 'center',
+    //     gap: 10,
+    //     height: isTableView ? '56px' : undefined,
+    //     display: isTableView ? 'inline-flex' : 'flex',
+    //     width: isTableView ? 'fit-content' : '100%',
+    //   }}
+    // >
+    //   <img src="/images/cake-staking/token-vecake.png" alt="token-vecake" width="38px" />
+    //   <Text color="white" bold fontSize={isMobile && isTableView ? 11 : 14}>
+    //     {t('Stake & Lock for veCAKE, to enjoy more rewards & benefit!')}
+    //   </Text>
+    // </ShineStyledBox>
+    <></>
   )
 })
 

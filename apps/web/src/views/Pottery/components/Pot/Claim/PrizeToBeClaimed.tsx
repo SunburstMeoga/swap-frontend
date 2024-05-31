@@ -1,9 +1,9 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { Flex, Box, Text, Balance } from '@pancakeswap/uikit'
-import { DeserializedPotteryUserData } from 'state/types'
-import { useCakePrice } from 'hooks/useCakePrice'
+import { Balance, Box, Flex, Text } from '@pancakeswap/uikit'
 import { getBalanceNumber } from '@pancakeswap/utils/formatBalance'
 import BigNumber from 'bignumber.js'
+import { useCakePrice } from 'hooks/useCakePrice'
+import { DeserializedPotteryUserData } from 'state/types'
 import ClaimButton from './ClaimButton'
 
 interface PrizeToBeClaimedProps {
@@ -28,7 +28,7 @@ const PrizeToBeClaimed: React.FC<React.PropsWithChildren<PrizeToBeClaimedProps>>
       <Flex>
         <Box style={{ alignSelf: 'center' }}>
           <Balance fontSize="20px" lineHeight="110%" value={rewardToken} decimals={2} bold />
-          <Balance fontSize="12px" lineHeight="110%" color="textSubtle" value={rewardInBusd} decimals={2} unit=" USD" />
+          <Balance fontSize="12px" lineHeight="110%" color="textSubtle" value={rewardInBusd} decimals={2} unit=" PGC" />
         </Box>
         <ClaimButton rewardToken={rewardToken} />
       </Flex>

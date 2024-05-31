@@ -1,19 +1,19 @@
 import {
-  BalanceWithLoading,
-  Box,
-  Button,
-  Flex,
-  Heading,
-  HelpIcon,
-  Skeleton,
-  Text,
-  useMatchBreakpoints,
-  useModal,
-  useTooltip,
+    BalanceWithLoading,
+    Box,
+    Button,
+    Flex,
+    Heading,
+    HelpIcon,
+    Skeleton,
+    Text,
+    useMatchBreakpoints,
+    useModal,
+    useTooltip,
 } from '@pancakeswap/uikit'
 import { Pool } from '@pancakeswap/widgets-internal'
-import { styled } from 'styled-components'
 import BN from 'bignumber.js'
+import { styled } from 'styled-components'
 
 import { useTranslation } from '@pancakeswap/localization'
 import { Token } from '@pancakeswap/sdk'
@@ -144,7 +144,7 @@ const AutoHarvestAction: React.FunctionComponent<React.PropsWithChildren<AutoHar
                         decimals={2}
                         prefix="~"
                         value={autoUsdToDisplay}
-                        unit=" USD"
+                        unit=" PGC"
                       />
                     )}
                   </>

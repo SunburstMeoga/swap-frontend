@@ -188,7 +188,7 @@ const Row: React.FunctionComponent<React.PropsWithChildren<RowPropsWithLoading>>
           <td width="50%">
             <EarnedMobileCell>
               <CellLayout label={t('Earned')}>
-                <EarnedUsdPrice {...props.earned} />
+                {/* <EarnedUsdPrice {...props.earned} /> */}
               </CellLayout>
             </EarnedMobileCell>
           </td>

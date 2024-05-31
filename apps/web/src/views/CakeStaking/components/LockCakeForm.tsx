@@ -59,7 +59,7 @@ const CakeInput: React.FC<{
 
   const usdValue = (
     <Flex>
-      <Balance mt={1} fontSize="12px" color="textSubtle" decimals={2} value={cakeUsdValue} unit=" USD" prefix="~" />
+      <Balance mt={1} fontSize="12px" color="textSubtle" decimals={2} value={cakeUsdValue} unit=" PGC" prefix="~" />
     </Flex>
   )
 

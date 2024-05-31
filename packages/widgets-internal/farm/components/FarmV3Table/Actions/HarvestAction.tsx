@@ -1,5 +1,5 @@
 import { useTranslation } from "@pancakeswap/localization";
-import { Balance, Flex, Button, Text } from "@pancakeswap/uikit";
+import { Balance, Button, Flex, Text } from "@pancakeswap/uikit";
 import { ActionContent, ActionTitles } from "./styles";
 
 export interface HarvestActionProps {
@@ -35,7 +35,7 @@ const HarvestAction: React.FunctionComponent<React.PropsWithChildren<HarvestActi
         <div>
           <Balance fontSize={20} bold decimals={2} value={earnings} />
           {earningsBusd > 0 && (
-            <Balance fontSize="12px" color="textSubtle" decimals={2} value={earningsBusd} unit=" USD" prefix="~" />
+            <Balance fontSize="12px" color="textSubtle" decimals={2} value={earningsBusd} unit=" PGC" prefix="~" />
           )}
         </div>
         <Button ml="4px" disabled={pendingTx || !userDataReady || disabled} onClick={handleHarvest}>

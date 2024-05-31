@@ -190,7 +190,7 @@ const ClaimInnerContainer: React.FC<React.PropsWithChildren<ClaimInnerProps>> = 
           value={dollarRewardAsBalance}
           fontSize="12px"
           color="textSubtle"
-          unit=" USD"
+          unit=" PGC"
           prefix="~"
         />
       </Flex>

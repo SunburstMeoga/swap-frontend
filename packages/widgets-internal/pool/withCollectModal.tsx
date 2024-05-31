@@ -34,7 +34,7 @@ export const BalanceWithActions: React.FC<
                     decimals={2}
                     prefix="~"
                     value={earningTokenDollarBalance}
-                    unit=" USD"
+                    unit=" PGC"
                   />
                 )}
               </>

@@ -1,6 +1,6 @@
-import { Text, Flex, Image, Box, BalanceWithLoading } from '@pancakeswap/uikit'
-import Divider from 'components/Divider'
 import { useTranslation } from '@pancakeswap/localization'
+import { BalanceWithLoading, Box, Flex, Image, Text } from '@pancakeswap/uikit'
+import Divider from 'components/Divider'
 import { StaticAmountPropsType } from '../types'
 
 const StaticAmount: React.FC<React.PropsWithChildren<StaticAmountPropsType>> = ({
@@ -25,7 +25,7 @@ const StaticAmount: React.FC<React.PropsWithChildren<StaticAmountPropsType>> = (
             color="textSubtle"
             decimals={2}
             prefix="~"
-            unit=" USD"
+            unit=" PGC"
           />
         </Box>
         <Flex alignItems="center" minWidth="70px">

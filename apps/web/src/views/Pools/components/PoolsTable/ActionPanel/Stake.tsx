@@ -255,7 +255,8 @@ const Staked: React.FunctionComponent<React.PropsWithChildren<StackedActionProps
       <ActionContainer>
         <ActionTitles>
           <Text fontSize="12px" bold color="textSubtle" as="span" textTransform="uppercase">
-            {t('Enable pool')}
+            {/* {t('Enable pool')} */}
+            开始质押
           </Text>
         </ActionTitles>
         <ActionContent>
@@ -270,7 +271,8 @@ const Staked: React.FunctionComponent<React.PropsWithChildren<StackedActionProps
       <ActionContainer>
         <ActionTitles>
           <Text fontSize="12px" bold color="textSubtle" as="span" textTransform="uppercase">
-            {t('Enable pool')}
+            {/* {t('Enable pool')} */}
+            开始质押
           </Text>
         </ActionTitles>
         <ActionContent>
@@ -329,7 +331,7 @@ const Staked: React.FunctionComponent<React.PropsWithChildren<StackedActionProps
                       color="textSubtle"
                       decimals={2}
                       value={vaultKey ? stakedAutoDollarValue : stakedTokenDollarBalance}
-                      unit=" USD"
+                      unit=" PGC"
                       prefix="~"
                     />
                   </SkeletonV2>

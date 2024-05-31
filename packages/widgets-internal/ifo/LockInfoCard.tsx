@@ -1,5 +1,5 @@
 import { useTranslation } from "@pancakeswap/localization";
-import { RowBetween, AutoColumn, Text, Card, CardBody } from "@pancakeswap/uikit";
+import { AutoColumn, Card, CardBody, RowBetween, Text } from "@pancakeswap/uikit";
 import { formatUnixTimestamp } from "@pancakeswap/utils/formatTimestamp";
 import BigNumber from "bignumber.js";
 import dayjs from "dayjs";
@@ -47,7 +47,7 @@ export function LockInfoCard({ amount = 0, usdPrice = 0, unlockAt = 0, ...props 
               {t("CAKE locked")}
             </Text>
             <BalanceDisplay bold value={amountNum} decimals={2} fontSize="1.25rem" />
-            <BalanceDisplay prefix="~" value={usdAmount} decimals={2} unit=" USD" fontSize="0.75rem" />
+            <BalanceDisplay prefix="~" value={usdAmount} decimals={2} unit=" PGC" fontSize="0.75rem" />
           </AutoColumn>
           <AutoColumn>
             <Text fontSize="0.75rem" color="textSubtle" textTransform="uppercase" bold>

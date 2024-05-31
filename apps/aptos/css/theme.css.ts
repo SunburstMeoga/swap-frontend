@@ -1,5 +1,5 @@
-import { tokens } from '@pancakeswap/uikit/tokens'
 import { modeVars } from '@pancakeswap/uikit/css/vars.css'
+import { tokens } from '@pancakeswap/uikit/tokens'
 import { createGlobalTheme } from '@vanilla-extract/css'
 
 createGlobalTheme('[data-theme="light"]', modeVars, {

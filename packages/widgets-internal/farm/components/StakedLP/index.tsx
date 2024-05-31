@@ -45,7 +45,7 @@ const StakedLP: React.FunctionComponent<React.PropsWithChildren<StakedLPProps>> 
             color="textSubtle"
             decimals={2}
             value={getBalanceNumber(lpTokenPrice.times(stakedBalance), decimals)}
-            unit=" USD"
+            unit=" PGC"
             prefix="~"
           />
           <Flex flexDirection={["column", "column", "row"]}>

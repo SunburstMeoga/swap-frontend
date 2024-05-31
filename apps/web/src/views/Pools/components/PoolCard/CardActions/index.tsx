@@ -1,18 +1,18 @@
 import BigNumber from 'bignumber.js'
 
-import { styled } from 'styled-components'
+import { Box, Flex, Text } from '@pancakeswap/uikit'
 import { BIG_ZERO } from '@pancakeswap/utils/bigNumber'
-import { Flex, Text, Box } from '@pancakeswap/uikit'
 import { Pool } from '@pancakeswap/widgets-internal'
+import { styled } from 'styled-components'
 
 import { useTranslation } from '@pancakeswap/localization'
+import { Token } from '@pancakeswap/sdk'
 import { PoolCategory } from 'config/constants/types'
 import { useProfileRequirement } from 'views/Pools/hooks/useProfileRequirement'
-import { Token } from '@pancakeswap/sdk'
-import ApprovalAction from './ApprovalAction'
-import StakeActions from './StakeActions'
-import HarvestActions from './HarvestActions'
 import { ProfileRequirementWarning } from '../../ProfileRequirementWarning'
+import ApprovalAction from './ApprovalAction'
+import HarvestActions from './HarvestActions'
+import StakeActions from './StakeActions'
 
 const InlineText = styled(Text)`
   display: inline;
@@ -43,7 +43,9 @@ const CardActions: React.FC<React.PropsWithChildren<CardActionsProps>> = ({ pool
         <>
           <Box display="inline">
             <InlineText color="secondary" bold fontSize="12px">
-              {`${earningToken.symbol} `}
+              {/* {`${earningToken.symbol} `} */}
+              {`PGC `}
+
             </InlineText>
             <InlineText color="textSubtle" textTransform="uppercase" bold fontSize="12px">
               {t('Earned')}

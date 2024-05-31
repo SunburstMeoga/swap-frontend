@@ -107,7 +107,7 @@ const StakedCell: React.FC<React.PropsWithChildren<StakedCellProps>> = ({ pool, 
                     decimals={2}
                     prefix="~"
                     value={pool.vaultKey ? stakedAutoDollarValue : stakedTokenDollarBalance}
-                    unit=" USD"
+                    unit=" PGC"
                   />
                 ) : (
                   <Text mt="4px" fontSize="12px" color="textDisabled">

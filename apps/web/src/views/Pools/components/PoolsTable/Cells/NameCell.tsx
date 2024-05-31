@@ -49,8 +49,11 @@ const NameCell: React.FC<React.PropsWithChildren<NameCellProps>> = ({ pool, tool
 
   const showStakedTag = vaultKey ? hasVaultShares : isStaked
 
-  let title: React.ReactNode = `${t('Earn')} ${earningTokenSymbol}`
-  let subtitle: React.ReactNode = `${t('Stake')} ${stakingTokenSymbol}`
+  // let title: React.ReactNode = `${t('Earn')} ${earningTokenSymbol}`
+  let title: React.ReactNode = `PGC 节点`
+  // let subtitle: React.ReactNode = `${t('Stake')} ${stakingTokenSymbol}`
+  let subtitle: React.ReactNode = ``
+
   const showSubtitle = sousId !== 0 || (sousId === 0 && !isMobile)
 
   if (vaultKey) {
@@ -152,7 +155,8 @@ export const StakedCakeStatus: React.FC<React.PropsWithChildren<VaultPositionPar
     const { t } = useTranslation()
     return (
       <Text fontSize="12px" bold color={stakedStatus[vaultPosition].color} textTransform="uppercase">
-        {t(stakedStatus[vaultPosition].text)}
+        {/* {t(stakedStatus[vaultPosition].text)} */}
+        PGChain双币质押
       </Text>
     )
   },

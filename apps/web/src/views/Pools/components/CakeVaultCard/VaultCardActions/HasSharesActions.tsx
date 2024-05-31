@@ -1,15 +1,15 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  AddIcon,
-  Balance,
-  Flex,
-  IconButton,
-  Message,
-  MessageText,
-  MinusIcon,
-  Skeleton,
-  Text,
-  useModal,
+    AddIcon,
+    Balance,
+    Flex,
+    IconButton,
+    Message,
+    MessageText,
+    MinusIcon,
+    Skeleton,
+    Text,
+    useModal,
 } from '@pancakeswap/uikit'
 import { Pool } from '@pancakeswap/widgets-internal'
 import { LearnMoreLink } from 'views/CakeStaking/components/SyrupPool'
@@ -75,7 +75,7 @@ const HasSharesActions: React.FC<React.PropsWithChildren<HasStakeActionProps>> =
                 color="textSubtle"
                 decimals={2}
                 prefix="~"
-                unit=" USD"
+                unit=" PGC"
               />
             ) : (
               <Skeleton mt="1px" height={16} width={64} />
